@@ -1,0 +1,19 @@
+.arimo {
+    font-family: 'Arimo', sans-serif; 
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
