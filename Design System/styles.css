@@ -1,5 +1,13 @@
+body {
+    font-size: 16px;
+}
+
 .arimo {
     font-family: 'Arimo', sans-serif; 
+}
+
+.aleo {
+    font-family: 'Aleo', serif;
 }
 
 .regular {
@@ -16,4 +24,32 @@
 
 .italic {
     font-style: italic;
+}
+
+.font-xxs {
+    font-size: 0.7em;
+}
+
+.font-xs {
+    font-size: 0.8em;
+}
+
+.font-s {
+    font-size: 0.9em;
+}
+
+.font-m {
+    font-size: 1em;
+}
+
+.font-l {
+    font-size: 1.2em;
+}
+
+.font-xl {
+    font-size: 1.5em;
+}
+
+.font-xxl {
+    font-size: 2em;
 }
