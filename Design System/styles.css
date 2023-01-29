@@ -53,3 +53,18 @@ body {
 .font-xxl {
     font-size: 2em;
 }
+
+.text-light {
+    color: white;
+}
+
+.text-dark {
+    color: black;
+}
+
+.colours p {
+    padding: 2px;
+}
+.colours span {
+    padding: 10px;
+}
