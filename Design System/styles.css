@@ -64,7 +64,8 @@ body {
 }
 
 .colours p {
-    padding: 2px;
+    display: flex;
+    padding: 10px;
 }
 .colours span {
     padding: 10px;
