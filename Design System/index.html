@@ -204,12 +204,18 @@
             <p>Profile / Avatar images are preferred to have a 50% border radius when not used as a background</p>
         </div>
         <div>
+            <!-- Spacing decision inspired by https://www.designsystems.com/space-grids-and-layouts/ -->
             <h3>Spacing</h3>
-            <p>Buttons: 0px, 5px, 10px, or 15px vertical padding, 10px horizontal padding.</p>
-            <button style="padding:0px 10px">0px vertical</button>
-            <button style="padding:5px 10px">5px vertical</button>
-            <button style="padding:10px">10px vertical</button>
-            <button style="padding:15px 10px">15px vertical</button>
+            <p>Use "box-sizing: border-box" for consistent spacing of content</p>
+            <p>Paddings and margins should be multiples of 4px where possible</p>
+            <p>Content should be spaced using a 12-column "grid" layout using flexbox, with content spanning multiple
+                columns based on width of the content and the window</p>
+            <p>Buttons: 0px, 4px, 8px, or 12px vertical padding, 8px horizontal padding.</p>
+            <button style="padding:0px 8px;">0px vertical</button>
+            <button style="padding:4px 8px">4px vertical</button>
+            <button style="padding:8px">8px vertical</button>
+            <button style="padding:12px 8px">12px vertical</button>
+            <p>Images: 12px margin between images and text</p>
         </div>
     </main>
 </body>
