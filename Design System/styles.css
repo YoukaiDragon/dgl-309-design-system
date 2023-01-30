@@ -70,3 +70,7 @@ body {
 .colours span {
     padding: 10px;
 }
+
+.lists ol li {
+    padding-bottom: 4px;
+}
