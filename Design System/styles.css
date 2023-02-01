@@ -84,9 +84,14 @@ input {
 }
 
 .submit {
-    background-color: rgba(0, 255, 0, 1);
+    color: white;
+    background-color: rgba(4, 128, 64, 0.8);
     border: 1px solid black;
     border-radius: 10%;
     padding: 4px 8px;
     margin: 12px 0 4px;
+}
+
+.submit:hover {
+    background-color: rgba(4, 128, 64, 1);
 }
