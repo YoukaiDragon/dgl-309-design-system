@@ -71,6 +71,12 @@ body {
     padding: 10px;
 }
 
+form {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 8px;
+}
+
 label {
     margin: 4px 0;
 }

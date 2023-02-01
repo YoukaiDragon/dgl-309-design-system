@@ -22,6 +22,9 @@
         </div>
         <div>
             <h3>Forms</h3>
+            <p>Labels should be "display: block" for text and textarea fields, and "display: inline for other fields.
+            </p>
+            <p>Label should be placed after radio and checkbox inputs, and before other inputs</p>
             <div>
                 <form>
                     <div class="textInput">
@@ -73,6 +76,45 @@
                         <input class="submit" type="submit" value="Submit">
                     </div>
                 </form>
+                <p>CSS rules for forms:</p>
+                <div>
+                    <pclass="codeBlock">form {
+                        border: 1px solid black;
+                        display: inline-block;
+                        padding: 8px;
+                        }</p>
+                    <pclass="codeBlock">
+                        label {
+                        margin: 4px 0;
+                        }
+                    </p>
+                    <p>for text / textarea labels:</p>
+                    <pclass="codeBlock">
+                        .textInput label {
+                        display: block;
+                        }
+                    </p>
+                    <p>
+                        input {
+                        margin-bottom: 4px;
+                        }
+                    </p>
+                    <p class="codeBlock">
+                        .submit {
+                        color: white;
+                        background-color: rgba(4, 128, 64, 0.8);
+                        border: 1px solid black;
+                        border-radius: 10%;
+                        padding: 4px 8px;
+                        margin: 12px 0 4px;
+                        }
+                    </p>
+                    <p class="codeBlock">
+                        .submit:hover {
+                        background-color: rgba(4, 128, 64, 1);
+                        }
+                    </p>
+                </div>
             </div>
         </div>
         <div class="lists">
