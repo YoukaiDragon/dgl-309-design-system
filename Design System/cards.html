@@ -26,17 +26,20 @@
     </header>
     <main>
         <h2>Cards</h2>
-        <p>HTML template for card examples</p>
+        <p>HTML template for cards</p>
         <textarea class="codeBlock">
-<div class="card">
-    <img src="images/card-placeholder.png" alt="placeholder image">
-    <div class="card-body">
-    <p class="card-title">Card Title</p>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officia est quia,
-        voluptatem exercitationem iusto. Ex animi dignissimos eaque voluptatem?</p>
-    <a href="#" class="card-link">Card Link</a>
-    </div>
+<div class="cards"> <!-- Container class for cards -->
+   <div class="card">
+        <img src="images/card-placeholder.png" alt="placeholder image">
+        <div class="card-body">
+        <p class="card-title">Card Title</p>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officia est quia,
+            voluptatem exercitationem iusto. Ex animi dignissimos eaque voluptatem?</p>
+        <a href="#" class="card-link">Card Link</a>
+        </div>
+    </div> 
 </div>
+
         </textarea>
         <p>CSS template for cards</p>
         <textarea class="codeBlock">
@@ -50,6 +53,7 @@
     border: 1px solid grey;
     width: auto;
     display: inline-block;
+    /* Change background colour (not opacity) based on the surrounding background */
     background: rgba(57, 181, 71, 0.4);
     width: 30%;
     min-width: 18rem;
