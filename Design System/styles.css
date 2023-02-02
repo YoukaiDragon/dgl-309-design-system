@@ -145,3 +145,8 @@ input {
 .card-link:hover {
     background: rgba(43, 57, 144, 1);
 }
+
+.codeBlock {
+    width: auto;
+    height: 6rem;
+}
