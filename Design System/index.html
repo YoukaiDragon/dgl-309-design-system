@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Foster Design System</title>
+    <title>Foster Design System - Typography</title>
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
@@ -14,16 +14,24 @@
     <header>
         <p id="logotype">TF</p>
         <h1>Foster Design System</h1>
-        <a href="index.html">Style Guidelines</a>
-        <a href="components.html">Components</a>
+        <a href="index.html">Typography</a>
+        <a href="colours.html">Colours</a>
+        <a href="images.html">Images</a>
+        <a href="spacing.html">Spacing</a>
+        <a href="navigation.html">Navigation</a>
+        <a href="forms.html">Forms</a>
+        <a href="lists.html">Lists</a>
+        <a href="accordians.html">Accordians</a>
+        <a href="cards.html">Cards</a>
+        <a href="carousels.html">Carousels</a>
+        <a href="modals.html">Modals</a>
     </header>
 
     <main>
-        <h2>Style Guidelines</h2>
         <div class="typography">
-            <h3>Typography</h3>
+            <h2>Typography</h2>
             <div class="typography-headers">
-                <h4>Header Typeface</h4>
+                <h3>Header Typeface</h3>
                 <p>Arimo</p>
                 <h1><span class="arimo regular">Regular</span> <span class="arimo regular italic">Regular Italic</span>
                     <span class="arimo semibold">Semibold</span> <span class="arimo semibold italic">Semibold
@@ -58,7 +66,7 @@
                 <p>Font weights for headers are 400 (Regular), 600 (Semibold) and 700 (Bold)</p>
             </div>
             <div class="typography-content">
-                <h4>Content Typeface</h4>
+                <h3>Content Typeface</h3>
                 <p>Aleo</p>
                 <p>Font sizes are defined in ems using a default body font size of 16px</p>
                 <p class=font-xxs><span class="aleo light">Light text for image captions</span> <span
@@ -104,122 +112,6 @@
                         class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
                         italic text for emphasized content</span></p>
             </div>
-        </div>
-        <div class="colours">
-            <h3>Colours</h3>
-            <h4>Body Text</h4>
-            <p class="text-dark" style="background:rgba(255, 255, 255, 1)">Body text is dark rgba(25, 25, 25, 1) against
-                light backgrounds</p>
-            <p class="text-light" style="background:rgba(25, 25, 25, 1)">Body text is white rgba(255, 255, 255, 1)
-                against dark backgrounds</p>
-            <h4>Titles / Display Text</h4>
-            <h4>Main Background Colours:</h4>
-            <p><span style="background:rgba(57, 181, 71, 1)">rgba(57, 181, 71, 1)</span><span
-                    style="background:rgba(57, 181, 71, 0.8)">rgba(57, 181, 71, 0.8)</span><span
-                    style="background:rgba(57, 181, 71, 0.6)">rgba(57, 181, 71, 0.6)</span><span
-                    style="background:rgba(57, 181, 71, 0.4)">rgba(57, 181, 71, 0.4)</span><span
-                    style="background:rgba(57, 181, 71, 0.2)">rgba(57, 181, 71, 0.2)</span></p>
-            <p><span class="text-light" style="background:rgba(25, 25, 25, 1)">rgba(25, 25, 25,
-                    1)</span><span class="text-light" style="background:rgba(25, 25, 25, 0.8)">rgba(25, 25, 25,
-                    0.8)</span><span class="text-light" style="background:rgba(25, 25, 25, 0.6)">rgba(25, 25, 25,
-                    0.6)</span><span style="background:rgba(25, 25, 25, 0.4)">rgba(25, 25, 25, 0.4)</span><span
-                    style="background:rgba(25, 25, 25, 0.2)">rgba(25, 25, 25, 0.2)</span></p>
-            <p><span class="text-light" style="background:rgba(43, 57, 144, 1)">rgba(43, 57, 144,
-                    1)</span><span class="text-light" style="background:rgba(43, 57, 144, 0.8)">rgba(43, 57, 144,
-                    0.8)</span><span style="background:rgba(43, 57, 144, 0.6)">rgba(43, 57, 144, 0.6)</span><span
-                    style="background:rgba(43, 57, 144, 0.4)">rgba(43, 57, 144, 0.4)</span><span
-                    style="background:rgba(43, 57, 144, 0.2)">rgba(43, 57, 144, 0.2)</span></p>
-            <div>
-                <h4>Alternate Background Colours</h4>
-                <p><span class="text-light" style="background:rgba(4, 128, 64, 1)">rgba(4, 128, 64,
-                        1)</span><span class="text-light" style="background:rgba(4, 128, 64, 0.8)">rgba(4, 128, 64,
-                        0.8)</span><span style="background:rgba(4, 128, 64, 0.6)">rgba(4, 128, 64, 0.6)</span><span
-                        style="background:rgba(4, 128, 64, 0.4)">rgba(4, 128, 64, 0.4)</span><span
-                        style="background:rgba(4, 128, 64, 0.2)">rgba(4, 128, 64, 0.2)</span></p>
-                <p><span style="background:rgba(0, 174, 239, 1)">rgba(0, 174, 239, 1)</span><span
-                        style="background:rgba(0, 174, 239, 0.8)">rgba(0, 174, 239, 0.8)</span><span
-                        style="background:rgba(0, 174, 239, 0.6)">rgba(0, 174, 239, 0.6)</span><span
-                        style="background:rgba(0, 174, 239, 0.4)">rgba(0, 174, 239, 0.4)</span><span
-                        style="background:rgba(0, 174, 239, 0.2)">rgba(0, 174, 239, 0.2)</span></p>
-            </div>
-            <div>
-                <h4>Buttons</h4>
-                <p>Active confirm button</p>
-                <p><span class="text-light" style="background: rgba(4, 128, 64, 0.8)">rgba(4, 128, 64, 0.8)</span></p>
-                <p>Hovered Active confirm button</p>
-                <p><span class="text-light" style="background: rgba(4, 128, 64, 1)">rgba(4, 128, 64, 1)</span></p>
-                <p>Disabled confirm button</p>
-                <p><span style="background: rgba(0, 255, 0, 0.2)">rgba(0, 255, 0, 0.2)</span></p>
-                <p>Active cancel button</p>
-                <p><span class="text-light" style="background:rgb(241, 53, 53, 1)">rgba(241, 53, 53, 1)</span></p>
-                <p>Disabled cancel button</p>
-                <p><span style="background: rgba(241, 53, 53, 0.2)">rgba(241, 53, 53, 0.2)</span></p>
-            </div>
-            <div>
-                <h4>Context Colours</h4>
-                <p>Success</p>
-                <p><span style="background:rgba(0, 255, 0, 1)">rgba(0, 255, 0,
-                        1)</span><span style="background:rgba(0, 255, 0, 0.8)">rgba(0, 255, 0,
-                        0.8)</span><span style="background:rgba(0, 255, 0, 0.6)">rgba(0, 255, 0, 0.6)</span><span
-                        style="background:rgba(0, 255, 0, 0.4)">rgba(0, 255, 0, 0.4)</span><span
-                        style="background:rgba(0, 255, 0, 0.2)">rgba(0, 255, 0, 0.2)</span></p>
-                <p>Danger</p>
-                <p><span class="text-light" style="background:rgb(241, 53, 53, 1)">rgba(241, 53, 53, 1)</span><span
-                        style="background:rgba(241, 53, 53, 0.8)">rgba(241, 53, 53, 0.8)</span><span
-                        style="background:rgba(241, 53, 53, 0.6)">rgba(241, 53, 53, 0.6)</span><span
-                        style="background:rgba(241, 53, 53, 0.4)">rgba(241, 53, 53, 0.4)</span><span
-                        style="background:rgba(241, 53, 53, 0.2)">rgba(241, 53, 53, 0.2)</span></p>
-                <p>Info</p>
-                <p><span style="background:rgba(0, 174, 239, 1)">rgba(0, 174, 239, 1)</span><span
-                        style="background:rgba(0, 174, 239, 0.8)">rgba(0, 174, 239, 0.8)</span><span
-                        style="background:rgba(0, 174, 239, 0.6)">rgba(0, 174, 239, 0.6)</span><span
-                        style="background:rgba(0, 174, 239, 0.4)">rgba(0, 174, 239, 0.4)</span><span
-                        style="background:rgba(0, 174, 239, 0.2)">rgba(0, 174, 239, 0.2)</span></p>
-                <p>Warning</p>
-                <p><span style="background:rgba(247, 156, 52, 1)">rgba(247, 156, 52, 1)</span><span
-                        style="background:rgba(247, 156, 52, 0.8)">rgba(247, 156, 52, 0.8)</span><span
-                        style="background:rgba(247, 156, 52, 0.6)">rgba(247, 156, 52, 0.6)</span><span
-                        style="background:rgba(247, 156, 52, 0.4)">rgba(247, 156, 52, 0.4)</span><span
-                        style="background:rgba(247, 156, 52, 0.2)">rgba(247, 156, 52, 0.2)</span></p>
-            </div>
-        </div>
-        <div>
-            <h3>Images</h3>
-            <h4>Aspect Ratios</h4>
-            <!-- Aspect ratio choices inpsired by https://www.cronyxdigital.com/blog/the-ultimate-website-image-guide-->
-            <ul>
-                <li>
-                    16:9 Banner / "Hero" Images, Section Backgrounds
-                </li>
-                <li>
-                    4:3 Horizontal Card Image
-                </li>
-                <li>
-                    3:4 Vertical Images
-                </li>
-                <li>
-                    1:1 Favicons, Social Media Icons
-                </li>
-            </ul>
-            <h4>Image Styling</h4>
-            <p>Images should have a 1px solid black border</p>
-            <p>Border radius should be set to either 0, 5%, or 10%. Rounded corners are preferred unless it is
-                desireable to keep the image edges flush with the container / other images.</p>
-            <p>Profile / Avatar images are preferred to have a 50% border radius when not used as a background</p>
-        </div>
-        <div>
-            <!-- Spacing decision inspired by https://www.designsystems.com/space-grids-and-layouts/ -->
-            <h3>Spacing</h3>
-            <p>Use "box-sizing: border-box" for consistent spacing of content</p>
-            <p>Paddings and margins should be multiples of 4px where possible</p>
-            <p>Content should be spaced using a 12-column "grid" layout using flexbox, with content spanning multiple
-                columns based on width of the content and the window</p>
-            <p>Buttons: 0px, 4px, 8px, or 12px vertical padding, 8px horizontal padding.</p>
-            <button style="padding:0px 8px;">0px vertical</button>
-            <button style="padding:4px 8px">4px vertical</button>
-            <button style="padding:8px">8px vertical</button>
-            <button style="padding:12px 8px">12px vertical</button>
-            <p>Images: 12px margin between images and text</p>
         </div>
     </main>
 </body>
