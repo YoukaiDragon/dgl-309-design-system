@@ -157,12 +157,12 @@ input {
     color: black;
     font-weight: bold;
     cursor: pointer;
-    padding: 18px;
+    padding: 16px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1.1rem;
     transition: 0.4s;
   }
   
@@ -171,7 +171,7 @@ input {
   }
   
   .panel {
-    padding: 0 18px;
+    padding: 0 16px;
     background-color: rgba(25, 25, 25, 0.2);
     max-height: 0;
     overflow: hidden;
