@@ -25,10 +25,44 @@
         <a href="modals.html">Modals</a>
     </header>
     <main>
+        <h2>Accordians</h2>
         <div>
-            <h2>Accordians</h2>
+            <!-- Accordion code based on W3Schools tutorial-->
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quis magnam iure numquam ab libero?
+                </p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, culpa.</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur soluta ducimus maxime sed, atque
+                    fugiat dolorem, a hic harum quaerat non illo suscipit! Voluptatum deserunt numquam voluptatibus
+                    libero? Vitae, minus.</p>
+            </div>
         </div>
     </main>
 </body>
+<script>
+    // JS code from W3Schools tutorial
+    let acc = document.getElementsByClassName("accordion");
+
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 </html>
