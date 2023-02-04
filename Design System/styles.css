@@ -225,3 +225,13 @@ input {
     text-decoration: none;
     cursor: pointer;
 }
+
+#image-modal-link {
+    width: 400px;
+    height: auto;
+}
+
+#image-modal-content {
+    width: 100%;
+    height: auto;
+}
