@@ -54,10 +54,184 @@
         <p>The example navbar is at the top of the screen, and turns into a hamburger
             menu at narrow screen widths (less than 576px).
         </p>
+        <p>HTML for nav bar:</p>
+        <textarea class="codeBlock">
+<div class="menu-btn">
+    <span class="menu-btn__burger"></span>
+</div>
+<nav class="nav">
+    <ul class="menu-nav">
+        <li class="menu-nav__item">
+            <a href="#">Example1</a>
+        </li>
+        <li class="menu-nav__item">
+            <a href="#">Example2</a>
+        </li>
+        <li class="menu-nav__item">
+            <a href="#">Example3</a>
+        </li>
+        <li class="menu-nav__item">
+            <a href="#">Example4</a>
+        </li>
+        <li class="menu-nav__item">
+            <a href="#">Example5</a>
+        </li>
+    </ul>
+</nav>  </textarea>
         <p>CSS for nav bar / hamburger menu:</p>
         <textarea class="codeBlock">
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
 
-        </textarea>
+
+.menu-btn {
+    position: absolute;
+    z-index: 2;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+}
+
+@media screen and (min-width: 576px) {
+    .menu-btn {
+        visibility: hidden;
+    }
+}
+
+.menu-btn__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: black; /* Set based on main content background */
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background-color: black; /* Set based on main content background */
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background-color: black; /* Set based on main content background */
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger.open {
+    transform: rotate(720deg);
+    background: transparent;
+}
+
+.menu-btn__burger.open::before {
+    transform: rotate(45deg) translate(5px, 8px);
+    background-color: white; /* Set based on hamburger menu background */
+}
+
+.menu-btn__burger.open::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+    background-color: white; /* Set based on hamburger menu background */
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.98;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 576px) {
+    .nav {
+        visibility: visible;
+    }
+}
+
+.nav.open {
+    visibility: visible;
+}
+
+.nav .menu-nav {
+    margin-top: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    overflow: hidden;
+    background: #272727;
+    list-style-type: none;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-design {
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 576px) {
+    .nav .menu-nav {
+        height: 10vh;
+        margin: 0 auto;
+        transform: translateY(0);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-design {
+        margin-top: 10vh;
+    }
+}
+
+.nav .menu-nav.open {
+    transform: translateY(0);
+}
+
+.nav .menu-nav__item {
+    transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav__item a {
+    text-decoration: none;
+    color: rgb(23, 144, 160);
+}
+
+.nav .menu-nav__item a:hover {
+    color: white;
+}
+
+.nav .menu-nav__link {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav__link:hover {
+    color: #126d35;
+}       </textarea>
         <p>JS for nav bar / hamburger menu:</p>
         <textarea class="codeBlock">
 const menuBtn = document.querySelector('.menu-btn');
