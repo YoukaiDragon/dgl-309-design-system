@@ -438,12 +438,12 @@ input {
   }
   
   /* The circles or bullets and indicators */
-  .dots {
+  .carousel-dots {
     cursor: pointer;
     height: 16px;
     width: 16px;
     margin: 0 3px;
-    background-color: #acc;
+    background-color: rgba(4, 128, 64, 0.4);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.5s ease;
