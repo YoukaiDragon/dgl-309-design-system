@@ -427,7 +427,7 @@ input {
   
   /*when the user hovers,add a black background with some little opacity */
   .carousel-back:hover, .carousel-forward:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(25,25,25,0.8);
   }
   
   /* Caption Info */
@@ -443,12 +443,12 @@ input {
     height: 16px;
     width: 16px;
     margin: 0 3px;
-    background-color: rgba(4, 128, 64, 0.4);
+    background-color: rgba(25, 25, 25, 0.2);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.5s ease;
   }
   
   .enable, .dots:hover {
-    background-color: #717161;
+    background-color: rgba(25, 25, 25, 0.8);
   }
