@@ -237,13 +237,13 @@ input {
 }
 
 /* Navigation based on previous assignment */
-/*
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+
+.header-example {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
-*/
+
 
 .menu-btn {
     position: absolute;
@@ -269,7 +269,7 @@ header {
     top: 0.5rem;
     width: 28px;
     height: 3px;
-    background: white;
+    background: black;
     transition: all 0.5s ease-in-out;
 }
 
@@ -279,7 +279,7 @@ header {
     top: -8px;
     width: 28px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     transition: all 0.5s ease-in-out;
 }
 
@@ -289,7 +289,7 @@ header {
     top: 8px;
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     transition: all 0.5s ease-in-out;
 }
 
@@ -300,11 +300,13 @@ header {
 
 .menu-btn__burger.open::before {
     transform: rotate(45deg) translate(5px, 8px);
+    background-color: white;
 }
 
 .menu-btn__burger.open::after {
     width: 28px;
     transform: rotate(-45deg) translate(3px, -7px);
+    background-color: white;
 }
 
 .nav {
@@ -314,16 +316,20 @@ header {
     width: 100%;
     opacity: 0.98;
     visibility: hidden;
-  }
-  @media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 576px) {
     .nav {
-      visibility: visible;
+        visibility: visible;
     }
-  }
-  .nav.open {
+}
+
+.nav.open {
     visibility: visible;
-  }
-  .nav .menu-nav {
+}
+
+.nav .menu-nav {
+    margin-top: 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -335,37 +341,52 @@ header {
     padding-right: 1rem;
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
-  }
-  @media screen and (min-width: 576px) {
-    .nav .menu-nav {
-      height: 10vh;
-      margin: 0 auto;
-      transform: translateY(0);
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
-  }
-  .nav .menu-nav.open {
-    transform: translateY(0);
-  }
-  .nav .menu-nav__item {
+}
+
+.nav-design {
     transition: all 0.5s ease-in-out;
-  }
-  .nav .menu-nav__item a {
+}
+
+@media screen and (min-width: 576px) {
+    .nav .menu-nav {
+        height: 10vh;
+        margin: 0 auto;
+        transform: translateY(0);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-design {
+        margin-top: 10vh;
+    }
+}
+
+.nav .menu-nav.open {
+    transform: translateY(0);
+}
+
+.nav .menu-nav__item {
+    transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav__item a {
     text-decoration: none;
     color: rgb(23, 144, 160);
-  }
-  .nav .menu-nav__item a:hover {
+}
+
+.nav .menu-nav__item a:hover {
     color: white;
-  }
-  .nav .menu-nav__link {
+}
+
+.nav .menu-nav__link {
     display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: 300;
     transition: all 0.5s ease-in-out;
-  }
-  .nav .menu-nav__link:hover {
+}
+
+.nav .menu-nav__link:hover {
     color: #126d35;
-  }
+}

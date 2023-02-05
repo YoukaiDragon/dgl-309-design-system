@@ -10,23 +10,7 @@
 
 <body>
     <header>
-        <p id="logotype">TF</p>
-        <h1>Foster Design System</h1>
-        <a href="index.html">Typography</a>
-        <a href="colours.html">Colours</a>
-        <a href="images.html">Images</a>
-        <a href="spacing.html">Spacing</a>
-        <a href="navigation.html">Navigation</a>
-        <a href="forms.html">Forms</a>
-        <a href="lists.html">Lists</a>
-        <a href="accordions.html">Accordions</a>
-        <a href="cards.html">Cards</a>
-        <a href="carousels.html">Carousels</a>
-        <a href="modals.html">Modals</a>
-    </header>
-    <main>
-        <h2>Navigation</h2>
-        <div class="nav-example">
+        <div class="nav-example header-example">
             <div class="menu-btn">
                 <span class="menu-btn__burger"></span>
             </div>
@@ -50,6 +34,59 @@
                 </ul>
             </nav>
         </div>
+    </header>
+    <main class="nav-design">
+        <h1>Foster Design System</h1>
+        <a href="index.html">Typography</a>
+        <a href="colours.html">Colours</a>
+        <a href="images.html">Images</a>
+        <a href="spacing.html">Spacing</a>
+        <a href="navigation.html">Navigation</a>
+        <a href="forms.html">Forms</a>
+        <a href="lists.html">Lists</a>
+        <a href="accordions.html">Accordions</a>
+        <a href="cards.html">Cards</a>
+        <a href="carousels.html">Carousels</a>
+        <a href="modals.html">Modals</a>
+
+
+        <h2>Navigation</h2>
+        <p>The example navbar is at the top of the screen, and turns into a hamburger
+            menu at narrow screen widths (less than 576px).
+        </p>
+        <p>CSS for nav bar / hamburger menu:</p>
+        <textarea class="codeBlock">
+
+        </textarea>
+        <p>JS for nav bar / hamburger menu:</p>
+        <textarea class="codeBlock">
+const menuBtn = document.querySelector('.menu-btn');
+const hamburger = document.querySelector('.menu-btn__burger');
+const nav = document.querySelector('.nav');
+const menuNav = document.querySelector('.menu-nav');
+const navItems = document.querySelectorAll('.menu-nav__item');
+
+let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    if (!showMenu) {
+        hamburger.classList.add('open');
+        nav.classList.add('open');
+        menuNav.classList.add('open');
+        navItems.forEach(item => item.classList.add('open'));
+
+        showMenu = true;
+    } else {
+        hamburger.classList.remove('open');
+        nav.classList.remove('open');
+        menuNav.classList.remove('open');
+        navItems.forEach(item => item.classList.remove('open'));
+
+        showMenu = false;
+    }
+}</textarea>
     </main>
 </body>
 <script>
