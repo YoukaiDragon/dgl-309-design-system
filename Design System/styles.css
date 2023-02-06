@@ -343,6 +343,21 @@ input {
     transition: all 0.5s ease-in-out;
 }
 
+.logotype-container {
+    float: left;
+    width: auto;
+    height: 20vh;
+    background: rgb(39, 39, 39);
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav .logotype {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
 .nav-design {
     transition: all 0.5s ease-in-out;
 }
@@ -356,12 +371,21 @@ input {
         justify-content: space-evenly;
     }
 
+    .logotype-container {
+        height: 10vh;
+        transform: translateY(0);
+    }
+
     .nav-design {
         margin-top: 10vh;
     }
 }
 
 .nav .menu-nav.open {
+    transform: translateY(0);
+}
+
+.logotype-container.open {
     transform: translateY(0);
 }
 
@@ -397,7 +421,7 @@ input {
     altered from the example
 */
 
-/* Slideshow container */
+/* Carousel container */
 .carousel {
     max-width: 1000px;
     position: relative;

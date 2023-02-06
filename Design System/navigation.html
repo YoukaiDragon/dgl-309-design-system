@@ -15,6 +15,9 @@
                 <span class="menu-btn__burger"></span>
             </div>
             <nav class="nav">
+                <div class="logotype-container">
+                    <a class="logotype" href="#">TF</a>
+                </div>
                 <ul class="menu-nav">
                     <li class="menu-nav__item">
                         <a href="#">Example1</a>
@@ -270,6 +273,7 @@ function toggleMenu() {
     const nav = document.querySelector('.nav');
     const menuNav = document.querySelector('.menu-nav');
     const navItems = document.querySelectorAll('.menu-nav__item');
+    const logotype = document.querySelector('.logotype-container');
 
     let showMenu = false;
 
@@ -281,6 +285,7 @@ function toggleMenu() {
             nav.classList.add('open');
             menuNav.classList.add('open');
             navItems.forEach(item => item.classList.add('open'));
+            logotype.classList.add('open');
 
             showMenu = true;
         } else {
@@ -288,6 +293,7 @@ function toggleMenu() {
             nav.classList.remove('open');
             menuNav.classList.remove('open');
             navItems.forEach(item => item.classList.remove('open'));
+            logotype.classList.remove('open');
 
             showMenu = false;
         }
