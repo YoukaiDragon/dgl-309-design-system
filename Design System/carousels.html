@@ -65,6 +65,11 @@
     </main>
 </body>
 <script>
+/*
+    Carousel based on this example https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
+    with class names changed to work better with other components, and the design of the carousel
+    altered from the example, and auto-scrolling added
+*/
     let slidePosition = 1;
     SlideShow(slidePosition);
 
@@ -92,6 +97,10 @@
         slides[slidePosition - 1].style.display = "block";
         circles[slidePosition - 1].className += " enable";
     }
+
+    window.setInterval(function() {
+        plusSlides(1);
+    }, 4000);
 </script>
 
 </html>
