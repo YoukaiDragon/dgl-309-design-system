@@ -398,14 +398,14 @@ input {
 */
 
 /* Slideshow container */
-.slideshow-container {
+.carousel {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
 /* Make the images invisible by default */
-.carousel-containers {
+.carousel-container {
     display: none;
 }
 

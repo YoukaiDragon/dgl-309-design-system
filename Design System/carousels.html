@@ -32,20 +32,20 @@
             altered from the example
         -->
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="carousel">
 
             <!-- Full images with numbers and message Info -->
-            <div class="carousel-containers">
+            <div class="carousel-container">
                 <img src="images/carousel-1.png" style="width:100%">
                 <div class="carousel-info">First caption</div>
             </div>
 
-            <div class="carousel-containers">
+            <div class="carousel-container">
                 <img src="images/carousel-2.png" style="width:100%">
                 <div class="carousel-info">Second Caption</div>
             </div>
 
-            <div class="carousel-containers">
+            <div class="carousel-container">
                 <img src="images/carousel-3.png" style="width:100%">
                 <div class="carousel-info">Third Caption</div>
             </div>
@@ -84,7 +84,7 @@
     }
 
     function SlideShow(n) {
-        let slides = document.getElementsByClassName("carousel-containers");
+        let slides = document.getElementsByClassName("carousel-container");
         let circles = document.getElementsByClassName("carousel-dots");
         if (n > slides.length) { slidePosition = 1 }
         if (n < 1) { slidePosition = slides.length }
