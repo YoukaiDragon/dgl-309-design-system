@@ -355,7 +355,8 @@ input {
 .nav .logotype {
     text-decoration: none;
     color: white;
-    padding: 8px;
+    margin-left: 24px;
+    font-size: 3rem;
 }
 
 .nav-design {
@@ -367,8 +368,12 @@ input {
         height: 10vh;
         margin: 0 auto;
         transform: translateY(0);
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .nav li {
+        padding-right: 16px;
     }
 
     .logotype-container {
@@ -395,7 +400,11 @@ input {
 
 .nav .menu-nav__item a {
     text-decoration: none;
-    color: rgb(23, 144, 160);
+    color: rgba(0, 174, 239, 1);
+}
+
+.nav .menu-nav__item a:visited {
+    color: rgb(115, 218, 255);
 }
 
 .nav .menu-nav__item a:hover {
@@ -409,10 +418,6 @@ input {
     padding: 2rem 0;
     font-weight: 300;
     transition: all 0.5s ease-in-out;
-}
-
-.nav .menu-nav__link:hover {
-    color: #126d35;
 }
 
 /*
