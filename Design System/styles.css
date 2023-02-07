@@ -336,7 +336,7 @@ input {
     justify-content: center;
     height: 20vh;
     overflow: hidden;
-    background: #272727;
+    background: rgba(25, 25, 25, 1);
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
@@ -347,7 +347,7 @@ input {
     float: left;
     width: auto;
     height: 20vh;
-    background: rgb(39, 39, 39);
+    background: rgba(25, 25, 25, 1);
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
 }
