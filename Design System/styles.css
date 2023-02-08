@@ -3,6 +3,10 @@ body {
     color: rgba(25, 25, 25, 1);
 }
 
+p {
+    max-width: 80ch;
+}
+
 .arimo {
     font-family: 'Arimo', sans-serif;
 }
