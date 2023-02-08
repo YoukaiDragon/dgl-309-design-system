@@ -1,4 +1,4 @@
-// Hamburger menu JS based on previous assignment
+// Hamburger menu JS based on previous assignment https://github.com/nic-dgl203-f22/assignment4c-YoukaiDragon
 const menuBtn = document.querySelector('.menu-btn');
 const hamburger = document.querySelector('.menu-btn__burger');
 const nav = document.querySelector('.nav');
