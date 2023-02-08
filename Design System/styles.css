@@ -110,7 +110,8 @@ input {
 }
 
 .card {
-    border: 1px solid grey;
+    border: 4px solid rgba(25, 25, 25, 1);
+    border-radius: 5%;
     width: auto;
     display: inline-block;
     background: rgba(57, 181, 71, 0.4);
@@ -123,6 +124,7 @@ input {
 .card img {
     width: 100%;
     height: auto;
+    border-radius: 5% 5% 0 0;
 }
 
 .card-body {
