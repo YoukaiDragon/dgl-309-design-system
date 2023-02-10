@@ -460,7 +460,8 @@ input {
 }
 
 /* forward & Back buttons */
-.carousel-back, .carousel-forward {
+.carousel-back,
+.carousel-forward {
     cursor: pointer;
     position: absolute;
     top: 48%;
@@ -482,7 +483,8 @@ input {
 }
 
 /*when the user hovers,add a black background with some little opacity */
-.carousel-back:hover, .carousel-forward:hover {
+.carousel-back:hover,
+.carousel-forward:hover {
     background-color: rgba(25, 25, 25, 0.8);
 }
 
@@ -495,6 +497,11 @@ input {
 
 /* The circles or bullets and indicators */
 .carousel-dots {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.carousel-dot {
     cursor: pointer;
     height: 16px;
     width: 16px;
@@ -505,6 +512,7 @@ input {
     transition: background-color 0.5s ease;
 }
 
-.enable, .dots:hover {
+.enable,
+.dots:hover {
     background-color: rgba(25, 25, 25, 0.8);
 }

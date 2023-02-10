@@ -78,31 +78,32 @@
 
             <!-- Full images with numbers and message Info -->
             <div class="carousel-container">
-                <img src="images/carousel-1.png" style="width:100%">
+                <img src="https://github.com/YoukaiDragon/dgl-309-design-system/blob/main/Design%20System/images/carousel-1.png?raw=true"
+                    style="width:100%">
                 <div class="carousel-info">First caption</div>
             </div>
 
             <div class="carousel-container">
-                <img src="images/carousel-2.png" style="width:100%">
+                <img src="https://github.com/YoukaiDragon/dgl-309-design-system/blob/main/Design%20System/images/carousel-2.png?raw=true"
+                    style="width:100%">
                 <div class="carousel-info">Second Caption</div>
             </div>
 
             <div class="carousel-container">
-                <img src="images/carousel-3.png" style="width:100%">
+                <img src="https://github.com/YoukaiDragon/dgl-309-design-system/blob/main/Design%20System/images/carousel-3.png?raw=true"
+                    style="width:100%">
                 <div class="carousel-info">Third Caption</div>
             </div>
 
             <!-- Back and forward buttons -->
             <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
             <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The circles/dots -->
-        <div style="text-align:center">
-            <span class="carousel-dots" onclick="currentSlide(1)"></span>
-            <span class="carousel-dots" onclick="currentSlide(2)"></span>
-            <span class="carousel-dots" onclick="currentSlide(3)"></span>
+            <!-- The circles/dots -->
+            <div class="carousel-dots">
+                <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                <span class="carousel-dot" onclick="currentSlide(2)"></span>
+                <span class="carousel-dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </main>
 </body>
@@ -117,19 +118,23 @@
 
     // forward/Back controls
     function plusSlides(n) {
-        SlideShow(slidePosition += n);
+        SlideShow((slidePosition += n));
     }
 
     //  images controls
     function currentSlide(n) {
-        SlideShow(slidePosition = n);
+        SlideShow((slidePosition = n));
     }
 
     function SlideShow(n) {
         let slides = document.getElementsByClassName("carousel-container");
-        let circles = document.getElementsByClassName("carousel-dots");
-        if (n > slides.length) { slidePosition = 1 }
-        if (n < 1) { slidePosition = slides.length }
+        let circles = document.getElementsByClassName("carousel-dot");
+        if (n > slides.length) {
+            slidePosition = 1;
+        }
+        if (n < 1) {
+            slidePosition = slides.length;
+        }
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
