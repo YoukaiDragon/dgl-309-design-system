@@ -11,6 +11,10 @@ p {
     font-size: 1.2em;
 }
 
+ul {
+    list-style-type: none;
+}
+
 @media screen and (min-width: 568px) {
     main {
         width: 90%;
