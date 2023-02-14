@@ -118,15 +118,24 @@ p {
 }
 
 .image-example {
-    width: 400px;
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+}
+
+.image-example-banner {
+    width: 80%;
+    max-width: 400px;
     height: auto;
 }
 
 .avatar-example {
-    width: 200px;
-    height: 200px;
-    border: 1px solid rgba(25, 25, 25, 1);
     border-radius: 50%;
+}
+
+.image-size-examples {
+    display: flex;
+    flex-direction: column;
 }
 
 form {
