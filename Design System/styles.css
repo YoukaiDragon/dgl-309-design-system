@@ -410,7 +410,7 @@ input {
     transition: all 0.5s ease-in-out;
 }
 
-.logotype-container {
+.logo-container {
     float: left;
     width: auto;
     height: 20vh;
@@ -419,11 +419,12 @@ input {
     transition: all 0.5s ease-in-out;
 }
 
-.nav .logotype {
+.nav .logo {
     text-decoration: none;
     color: white;
-    margin-left: 24px;
-    font-size: 3rem;
+    position: relative;
+    top: 16px;
+    left: 16px;
 }
 
 .nav-design {
@@ -443,7 +444,7 @@ input {
         padding-right: 16px;
     }
 
-    .logotype-container {
+    .logo-container {
         height: 10vh;
         transform: translateY(0);
     }
@@ -457,7 +458,7 @@ input {
     transform: translateY(0);
 }
 
-.logotype-container.open {
+.logo-container.open {
     transform: translateY(0);
 }
 
