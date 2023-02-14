@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 16px;
     color: rgba(25, 25, 25, 1);
@@ -304,14 +308,6 @@ input {
 }
 
 /* Navigation based on previous assignment https://github.com/nic-dgl203-f22/assignment4c-YoukaiDragon*/
-
-.header-example {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-
 .menu-btn {
     position: absolute;
     z-index: 2;
@@ -381,7 +377,6 @@ input {
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0.98;
     visibility: hidden;
 }
 
@@ -400,20 +395,25 @@ input {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
-    height: 20vh;
+    justify-content: flex-start;
+    height: 40vh;
     overflow: hidden;
     background: rgba(25, 25, 25, 1);
     list-style-type: none;
-    padding-right: 1rem;
+    padding-right: 2rem;
+    padding-top: 16px;
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
+}
+
+.menu-nav__item {
+    padding-bottom: 16px;
 }
 
 .logo-container {
     float: left;
     width: auto;
-    height: 20vh;
+    height: 40vh;
     background: rgba(25, 25, 25, 1);
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
@@ -433,7 +433,7 @@ input {
 
 @media screen and (min-width: 576px) {
     .nav .menu-nav {
-        height: 10vh;
+        height: 132px;
         margin: 0 auto;
         transform: translateY(0);
         flex-flow: row wrap;
@@ -445,12 +445,12 @@ input {
     }
 
     .logo-container {
-        height: 10vh;
+        height: 132px;
         transform: translateY(0);
     }
 
     main {
-        margin-top: 10vh;
+        margin-top: 132px;
     }
 }
 
