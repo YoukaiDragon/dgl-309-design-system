@@ -72,8 +72,61 @@
             <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <p>Use "box-sizing: border-box" for consistent spacing of content</p>
             <p>Paddings and margins should be multiples of 4px where possible</p>
-            <p>Content should be spaced using a 12-column "grid" layout using flexbox, with content spanning multiple
-                columns based on width of the content and the window</p>
+            <p>Content should be spaced using a 12-column "grid" layout using flexbox and the flex-basis property,
+                with content spanning multiple columns based on width of the content and the window
+            </p>
+            <p>flex-basis values should add up to 100% for each row</p>
+            <p>When needed, change the flex-basis property in media queries to change the number of columns at different
+                breakpoints</p>
+            <p>The various section sizes (in number of columns) and the flex-basis used for that size:</p>
+            <div>
+                <p class="font-s flex-label">12-column section -- flex-basis: 100%;</p>
+                <div style="display: flex;">
+                    <div class="columns-example" style="flex-basis: 100%;"></div>
+                </div>
+                <p class="font-s flex-label">6 column section --flex-basis: 50%;</p>
+                <div style="display: flex;">
+                    <div class="columns-example" style="flex-basis: 50%;"></div>
+                    <div class="columns-example" style="flex-basis: 50%"></div>
+                </div>
+                <p class="font-s flex-label">4 column section --flex-basis: 33.3%;</p>
+                <div style="display: flex;">
+                    <div class="columns-example" style="flex-basis: 33.33%;"></div>
+                    <div class="columns-example" style="flex-basis: 33.33%;"></div>
+                    <div class="columns-example" style="flex-basis: 33.33%;"></div>
+                </div>
+                <p class="font-s flex-label">3 column section -- flex-basis: 25%;</p>
+                <div style="display: flex;">
+                    <div class="columns-example" style="flex-basis: 25%;"></div>
+                    <div class="columns-example" style="flex-basis: 25%;"></div>
+                    <div class="columns-example" style="flex-basis: 25%;"></div>
+                    <div class="columns-example" style="flex-basis: 25%;"></div>
+                </div>
+                <p class="font-s flex-label">2 column section -- flex-basis: 16.67%;</p>
+                <div style="display: flex;">
+                    <div class="columns-example" style="flex-basis: 16.67%;"></div>
+                    <div class="columns-example" style="flex-basis: 16.67%;"></div>
+                    <div class="columns-example" style="flex-basis: 16.67%;"></div>
+                    <div class="columns-example" style="flex-basis: 16.67%;"></div>
+                    <div class="columns-example" style="flex-basis: 16.67%;"></div>
+                    <div class="columns-example" style="flex-basis: 16.67%;"></div>
+                </div>
+                <p class="font-s flex-label">1 column section -- flex-basis: 8.33%</p>
+                <div style="display: flex;">
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                    <div class="columns-example" style="flex-basis: 8.33%"></div>
+                </div>
+            </div>
             <p>Text content should have a max width of between 70ch and 80ch to avoid an excessive amount of text per
                 line</p>
             <p>Buttons: 0px, 4px, 8px, or 12px vertical padding, 8px horizontal padding.</p>

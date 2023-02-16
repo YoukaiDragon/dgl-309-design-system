@@ -553,3 +553,13 @@ input {
 .dots:hover {
     background-color: rgba(25, 25, 25, 0.8);
 }
+
+.columns-example {
+    border: 1px solid black;
+    padding: 12px;
+    margin: 4px 0;
+}
+
+.flex-label {
+    margin: 0;
+}
