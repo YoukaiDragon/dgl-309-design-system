@@ -31,9 +31,9 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-        main {
-            width: 60%;
-        }
+    main {
+        width: 60%;
+    }
 }
 
 p {
@@ -556,10 +556,60 @@ input {
 
 .columns-example {
     border: 1px solid black;
-    padding: 12px;
+    padding: 4px 0 4px 4px;
     margin: 4px 0;
 }
 
 .flex-label {
     margin: 0;
+}
+
+/* Column layout width classes */
+
+.col-12 {
+    flex-basis: 100%;
+}
+
+.col-11 {
+    flex-basis: 91.67%;
+}
+
+.col-10 {
+    flex-basis: 83.33%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+}
+
+.col-8 {
+    flex-basis: 66.67%;
+}
+
+.col-7 {
+    flex-basis: 58.33%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+}
+
+.col-5 {
+    flex-basis: 41.67%;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+}
+
+.col-2 {
+    flex-basis: 16.67%;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
 }
