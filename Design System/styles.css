@@ -566,6 +566,10 @@ input {
 
 /* Column layout width classes */
 
+.row {
+    display: flex;
+}
+
 .col-12 {
     flex-basis: 100%;
 }

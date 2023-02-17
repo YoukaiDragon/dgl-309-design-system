@@ -95,54 +95,54 @@
             <p>when combining sections of different widths, ensure that the number of columns
                 in a row sums up to 12 (The flex-basis properties should sum to ~ 100%)
             </p>
-            <p>listed below are example column layouts. Each section is labelled with the 
+            <p>listed below are example column layouts. Each section is labelled with the
                 number of columns it occupies out of the 12
             </p>
             <div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-12">12</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-11">11</div>
                     <div class="columns-example col-1">1</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-10">10</div>
                     <div class="columns-example col-2">2</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-9">9</div>
                     <div class="columns-example col-3">3</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-8">8</div>
                     <div class="columns-example col-4">4</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-7">7</div>
                     <div class="columns-example col-5">5</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-6">6</div>
                     <div class="columns-example col-6">6</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-5">5</div>
                     <div class="columns-example col-5">5</div>
                     <div class="columns-example col-2">2</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-4">4</div>
                     <div class="columns-example col-4">4</div>
                     <div class="columns-example col-4">4</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-3">3</div>
                     <div class="columns-example col-3">3</div>
                     <div class="columns-example col-3">3</div>
                     <div class="columns-example col-3">3</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-2">2</div>
                     <div class="columns-example col-2">2</div>
                     <div class="columns-example col-2">2</div>
@@ -150,7 +150,7 @@
                     <div class="columns-example col-2">2</div>
                     <div class="columns-example col-2">2</div>
                 </div>
-                <div style="display: flex;">
+                <div class="row">
                     <div class="columns-example col-1">1</div>
                     <div class="columns-example col-1">1</div>
                     <div class="columns-example col-1">1</div>
@@ -165,6 +165,20 @@
                     <div class="columns-example col-1">1</div>
                 </div>
             </div>
+            <p>To utilize columns, copy the CSS in the codepen below into your stylesheet, then create divs with the
+                "row" class, and add a "col" class to each item placed into the div corresponding to the number of rows
+                it will occupy.
+                (ensure each row uses a total of 12 columns for consistent spacing)
+            </p>
+            <p class="codepen" data-height="300" data-default-tab="css" data-slug-hash="wvEaoJG"
+                data-user="Foster-Design-System"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/Foster-Design-System/pen/wvEaoJG">
+                        Grid Layout Classes</a> by Tyson Foster (<a
+                        href="https://codepen.io/Foster-Design-System">@Foster-Design-System</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <p>Text content should have a max width of between 70ch and 80ch to avoid an excessive amount of text per
                 line</p>
             <p>Buttons: 0px, 4px, 8px, or 12px vertical padding, 8px horizontal padding.</p>
