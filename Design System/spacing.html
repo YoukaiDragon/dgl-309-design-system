@@ -75,10 +75,29 @@
             <p>Content should be spaced using a 12-column "grid" layout using flexbox and the flex-basis property,
                 with content spanning multiple columns based on width of the content and the window
             </p>
-            <p>flex-basis values should add up to 100% for each row</p>
             <p>When needed, change the flex-basis property in media queries to change the number of columns at different
                 breakpoints</p>
             <p>The various section sizes (in number of columns) and the flex-basis used for that size:</p>
+            <ul style="column-count: 2">
+                <li>12 columns: flex-basis: 100%;</li>
+                <li>11 columns: flex-basis: 91.67%;</li>
+                <li>10 columns: flex-basis: 83.33%</li>
+                <li>9 columns: flex-basis: 75%;</li>
+                <li>8 columns: flex-basis: 66.67%;</li>
+                <li>7 columns: flex-basis: 58.33%;</li>
+                <li>6 columns: flex-basis: 50%;</li>
+                <li>5 columns: flex-basis: 41.67%;</li>
+                <li>4 columns: flex-basis: 33.33%;</li>
+                <li>3 columns: flex-basis: 25%;</li>
+                <li>2 columns: flex-basis: 16.67%;</li>
+                <li>1 column: flex-basis: 8.33%;</li>
+            </ul>
+            <p>when combining sections of different widths, ensure that the number of columns
+                in a row sums up to 12 (The flex-basis properties should sum to ~ 100%)
+            </p>
+            <p>listed below are example column layouts. Each section is labelled with the 
+                number of columns it occupies out of the 12
+            </p>
             <div>
                 <p class="font-s flex-label">12-column section -- flex-basis: 100%;</p>
                 <div style="display: flex;">
