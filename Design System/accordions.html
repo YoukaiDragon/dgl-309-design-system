@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         </div>
         <nav class="nav">
             <div class="logo-container">
-                <a class="logo" href="#"><img src="./images/Logo.png"></a>
+                <a class="logo" href="#"><img src="./images/Logo.png" alt="logo"></a>
             </div>
             <ul class="menu-nav">
                 <li class="menu-nav__item">
@@ -91,23 +91,23 @@
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </main>
+    <script>
+        // JS code from W3Schools tutorial
+        let acc = document.getElementsByClassName("accordion");
+    
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("accordion-active");
+                let panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script src="navbar.js"></script>
 </body>
-<script>
-    // JS code from W3Schools tutorial
-    let acc = document.getElementsByClassName("accordion");
-
-    for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("accordion-active");
-            let panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
-<script src="navbar.js"></script>
 
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
         </div>
         <nav class="nav">
             <div class="logo-container">
-                <a class="logo" href="#"><img src="./images/Logo.png"></a>
+                <a class="logo" href="#"><img src="./images/Logo.png" alt="logo"></a>
             </div>
             <ul class="menu-nav">
                 <li class="menu-nav__item">
@@ -103,35 +103,35 @@
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     </main>
+    <script>
+        // Base Modals JS from W3Schools Tutorial, modified to work with multiple modals on page
+        // Get the buttons that open the modals
+        let btns = document.getElementsByClassName("modal-link");
+    
+        // Get the <span> elements that close the modals
+        let spans = document.getElementsByClassName("modal-close");
+    
+        // When the user clicks on the button, open the corresponding modal
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                this.nextElementSibling.style.display = "block";
+            }
+        }
+        // When the user clicks on <span> (x), close the corresponding modal
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].onclick = function () {
+                this.parentElement.parentElement.style.display = "none";
+            }
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+            }
+        }  
+    </script>
+    <script src="navbar.js"></script>
 </body>
-<script>
-    // Base Modals JS from W3Schools Tutorial, modified to work with multiple modals on page
-    // Get the buttons that open the modals
-    let btns = document.getElementsByClassName("modal-link");
-
-    // Get the <span> elements that close the modals
-    let spans = document.getElementsByClassName("modal-close");
-
-    // When the user clicks on the button, open the corresponding modal
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].onclick = function () {
-            this.nextElementSibling.style.display = "block";
-        }
-    }
-    // When the user clicks on <span> (x), close the corresponding modal
-    for (let i = 0; i < spans.length; i++) {
-        spans[i].onclick = function () {
-            this.parentElement.parentElement.style.display = "none";
-        }
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target.classList.contains("modal")) {
-            event.target.style.display = "none";
-        }
-    }  
-</script>
-<script src="navbar.js"></script>
 
 </html>
