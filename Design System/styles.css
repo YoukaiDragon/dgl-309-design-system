@@ -319,12 +319,6 @@ input {
     visibility: visible;
 }
 
-@media screen and (min-width: 576px) {
-    .menu-btn {
-        visibility: hidden;
-    }
-}
-
 .menu-btn__burger {
     position: fixed;
     right: 1rem;
@@ -380,12 +374,6 @@ input {
     visibility: hidden;
 }
 
-@media screen and (min-width: 576px) {
-    .nav {
-        visibility: visible;
-    }
-}
-
 .nav.open {
     visibility: visible;
 }
@@ -393,21 +381,16 @@ input {
 .nav .menu-nav {
     margin-top: 0;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     height: 100vh;
     overflow: hidden;
     background: rgba(25, 25, 25, 1);
     list-style-type: none;
     padding-right: 2rem;
-    padding-top: 16px;
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
-}
-
-.menu-nav__item {
-    padding-bottom: 16px;
 }
 
 .logo-container {
@@ -431,29 +414,6 @@ input {
     transition: all 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 576px) {
-    .nav .menu-nav {
-        height: 132px;
-        margin: 0 auto;
-        transform: translateY(0);
-        flex-flow: row wrap;
-        justify-content: flex-end;
-    }
-
-    .nav li {
-        padding-right: 16px;
-    }
-
-    .logo-container {
-        height: 132px;
-        transform: translateY(0);
-    }
-
-    main {
-        margin-top: 132px;
-    }
-}
-
 .nav .menu-nav.open {
     transform: translateY(0);
 }
@@ -469,6 +429,9 @@ input {
 .nav .menu-nav__item a {
     text-decoration: none;
     color: rgba(0, 174, 239, 1);
+    display: inline-block;
+    padding: 12px;
+    font-size: 1.2rem;
 }
 
 .nav .menu-nav__item a:visited {
@@ -479,13 +442,31 @@ input {
     color: white;
 }
 
-.nav .menu-nav__link {
-    display: inline-block;
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding: 2rem 0;
-    font-weight: 300;
-    transition: all 0.5s ease-in-out;
+@media screen and (min-width: 576px) {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+    }
+
+    .nav .menu-nav {
+        height: 132px;
+        margin: 0 auto;
+        transform: translateY(0);
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .logo-container {
+        height: 132px;
+        transform: translateY(0);
+    }
+
+    main {
+        margin-top: 132px;
+    }
 }
 
 /*
