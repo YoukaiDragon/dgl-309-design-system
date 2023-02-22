@@ -6,6 +6,11 @@ html {
     box-sizing: inherit
 }
 
+/* BACKGROUND */
+body {
+  background-color: #39b547;
+}
+
 /* TYPOGRAPHY */
 
 main, .aleo {
