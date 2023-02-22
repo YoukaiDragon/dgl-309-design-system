@@ -50,12 +50,82 @@
         </div>
         <div class="projects">
             <h2>Projects</h2>
+            <!-- Carousel container -->
+            <div class="carousel">
+
+                <!-- Full images with numbers and message Info -->
+                <div class="carousel-container">
+                    <img src="https://github.com/YoukaiDragon/dgl-309-design-system/blob/main/Design%20System/images/carousel-1.png?raw=true"
+                        style="width:100%">
+                    <div class="carousel-info">Programming</div>
+                </div>
+
+                <div class="carousel-container">
+                    <img src="https://github.com/YoukaiDragon/dgl-309-design-system/blob/main/Design%20System/images/carousel-2.png?raw=true"
+                        style="width:100%">
+                    <div class="carousel-info">Web/App Design</div>
+                </div>
+
+                <div class="carousel-container">
+                    <img src="https://github.com/YoukaiDragon/dgl-309-design-system/blob/main/Design%20System/images/carousel-3.png?raw=true"
+                        style="width:100%">
+                    <div class="carousel-info">Music</div>
+                </div>
+
+                <!-- Back and forward buttons -->
+                <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
+                <!-- The circles/dots -->
+                <div class="carousel-dots">
+                    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
 
     </footer>
     <script src="scripts/navbar.js"></script>
+    <script>
+        let slidePosition = 1;
+        SlideShow(slidePosition);
+
+        // forward/Back controls
+        function plusSlides(n) {
+            SlideShow((slidePosition += n));
+        }
+
+        //  images controls
+        function currentSlide(n) {
+            SlideShow((slidePosition = n));
+        }
+
+        function SlideShow(n) {
+            let slides = document.getElementsByClassName("carousel-container");
+            let circles = document.getElementsByClassName("carousel-dot");
+            if (n > slides.length) {
+                slidePosition = 1;
+            }
+            if (n < 1) {
+                slidePosition = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (let i = 0; i < circles.length; i++) {
+                circles[i].className = circles[i].className.replace(" enable", "");
+            }
+            slides[slidePosition - 1].style.display = "block";
+            circles[slidePosition - 1].className += " enable";
+        }
+
+        // Automatically scroll slides
+        window.setInterval(function () {
+            plusSlides(1);
+        }, 4000);
+    </script>
 </body>
 
 </html>

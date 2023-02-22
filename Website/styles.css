@@ -1,9 +1,9 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit
+  box-sizing: inherit
 }
 
 /* BACKGROUND */
@@ -14,265 +14,335 @@ body {
 /* TYPOGRAPHY */
 
 main, .aleo {
-    font-family: 'Aleo', serif;
+  font-family: 'Aleo', serif;
 }
 
 h1, h2, h3, h4, h5, h6, .arimo {
-    font-family: 'Arimo', sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 
 .font-xxs {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .font-xs {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 .font-s {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .font-m {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .font-l {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .font-xl {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 .font-xxl {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .font-white {
-    color: rgb(255, 255, 255, 1);
+  color: rgb(255, 255, 255, 1);
 }
 
 .font-dark {
-    color: rgba(25, 25, 25, 1);
+  color: rgba(25, 25, 25, 1);
 }
 
 .font-weight-light {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .font-weight-regular {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .font-weight-semibold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .font-weight-bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .font-style-italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* NAVIGATION */
 .menu-btn {
-    position: absolute;
-    z-index: 21;
-    right: 1rem;
-    top: 1rem;
-    height: 20px;
-    width: 28px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    visibility: visible;
-  }
-  
-  .menu-btn__burger {
-    position: fixed;
-    right: 1rem;
-    top: 1.5rem;
-    width: 28px;
-    height: 3px;
-    background: black;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .menu-btn__burger::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    width: 28px;
-    height: 3px;
-    background-color: black;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .menu-btn__burger::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    width: 20px;
-    height: 3px;
-    background-color: black;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .menu-btn__burger.open {
-    transform: rotate(720deg);
-    background: transparent;
-  }
-  
-  .menu-btn__burger.open::before {
-    transform: rotate(45deg) translate(5px, 8px);
-    background-color: white;
-  }
-  
-  .menu-btn__burger.open::after {
-    width: 28px;
-    transform: rotate(-45deg) translate(3px, -7px);
-    background-color: white;
-  }
-  
-  .nav {
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  z-index: 21;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+}
+
+.menu-btn__burger {
+  position: fixed;
+  right: 1rem;
+  top: 1.5rem;
+  width: 28px;
+  height: 3px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+  background-color: white;
+}
+
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+  background-color: white;
+}
+
+.nav {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.nav.open {
+  visibility: visible;
+}
+
+.nav .menu-nav {
+  margin-top: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(25, 25, 25, 1);
+  list-style-type: none;
+  padding-right: 2rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.logo-container {
+  float: left;
+  width: auto;
+  height: 100vh;
+  background: rgba(25, 25, 25, 1);
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .logo {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 16px;
+  left: 16px;
+}
+
+.nav-design {
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+
+.logo-container.open {
+  transform: translateY(0);
+}
+
+.nav .menu-nav__item {
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav__item a {
+  text-decoration: none;
+  color: rgba(0, 174, 239, 1);
+  display: inline-block;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+.nav .menu-nav__item a:visited {
+  color: rgb(115, 218, 255);
+}
+
+.nav .menu-nav__item a:hover {
+  color: white;
+}
+
+
+/* PROJECT CAROUSEL
+/* Carousel container */
+.carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.carousel-container {
+  display: none;
+}
+
+/* forward & Back buttons */
+.carousel-back,
+.carousel-forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.carousel-forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.carousel-back:hover,
+.carousel-forward:hover {
+  background-color: rgba(25, 25, 25, 0.8);
+}
+
+/* Caption Info */
+.carousel-info {
+  color: black;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+/* The circles or bullets and indicators */
+.carousel-dots {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.carousel-dot {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: rgba(25, 25, 25, 0.2);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable,
+.dots:hover {
+  background-color: rgba(25, 25, 25, 0.8);
+}
+
+/* CONTACT PAGE */
+form {
+  background-color: rgb(165, 165, 165);
+  border: 1px solid black;
+  display: inline-block;
+  padding: 8px;
+}
+
+label {
+  margin: 4px 0;
+}
+
+.textInput label {
+  display: block;
+}
+
+input {
+  margin-bottom: 4px;
+}
+
+.submit {
+  color: white;
+  background-color: rgba(4, 128, 64, 0.8);
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 4px 8px;
+  margin: 12px 0 4px;
+}
+
+.submit:hover {
+  background-color: rgba(4, 128, 64, 1);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 576px) {
+  .menu-btn {
     visibility: hidden;
   }
-  
-  .nav.open {
+
+  .nav {
     visibility: visible;
   }
-  
+
   .nav .menu-nav {
-    margin-top: 0;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100vh;
-    overflow: hidden;
-    background: rgba(25, 25, 25, 1);
-    list-style-type: none;
-    padding-right: 2rem;
-    transform: translateY(-100%);
-    transition: all 0.5s ease-in-out;
+    height: 132px;
+    margin: 0 auto;
+    transform: translateY(0);
+    flex-flow: row wrap;
+    justify-content: flex-end;
   }
-  
+
   .logo-container {
-    float: left;
-    width: auto;
-    height: 100vh;
-    background: rgba(25, 25, 25, 1);
-    transform: translateY(-100%);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .nav .logo {
-    text-decoration: none;
-    color: white;
-    position: relative;
-    top: 16px;
-    left: 16px;
-  }
-  
-  .nav-design {
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .nav .menu-nav.open {
+    height: 132px;
     transform: translateY(0);
   }
-  
-  .logo-container.open {
-    transform: translateY(0);
-  }
-  
-  .nav .menu-nav__item {
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .nav .menu-nav__item a {
-    text-decoration: none;
-    color: rgba(0, 174, 239, 1);
-    display: inline-block;
-    padding: 12px;
-    font-size: 1.2rem;
-  }
-  
-  .nav .menu-nav__item a:visited {
-    color: rgb(115, 218, 255);
-  }
-  
-  .nav .menu-nav__item a:hover {
-    color: white;
-  }
 
-
-  /* CONTACT PAGE */
-
-  form {
-    background-color: rgb(165, 165, 165);
-    border: 1px solid black;
-    display: inline-block;
-    padding: 8px;
+  main {
+    margin-top: 132px;
   }
-  
-  label {
-    margin: 4px 0;
-  }
-  
-  .textInput label {
-    display: block;
-  }
-  
-  input {
-    margin-bottom: 4px;
-  }
-  
-  .submit {
-    color: white;
-    background-color: rgba(4, 128, 64, 0.8);
-    border: 1px solid black;
-    border-radius: 10%;
-    padding: 4px 8px;
-    margin: 12px 0 4px;
-  }
-  
-  .submit:hover {
-    background-color: rgba(4, 128, 64, 1);
-  }
-
-  /* MEDIA QUERIES */
-  
-  @media screen and (min-width: 576px) {
-    .menu-btn {
-      visibility: hidden;
-    }
-  
-    .nav {
-      visibility: visible;
-    }
-  
-    .nav .menu-nav {
-      height: 132px;
-      margin: 0 auto;
-      transform: translateY(0);
-      flex-flow: row wrap;
-      justify-content: flex-end;
-    }
-  
-    .logo-container {
-      height: 132px;
-      transform: translateY(0);
-    }
-  
-    main {
-      margin-top: 132px;
-    }
-  }
+}
