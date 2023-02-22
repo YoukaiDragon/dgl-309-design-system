@@ -214,6 +214,40 @@ h1, h2, h3, h4, h5, h6, .arimo {
   }
 
 
+  /* CONTACT PAGE */
+
+  form {
+    background-color: rgb(165, 165, 165);
+    border: 1px solid black;
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  label {
+    margin: 4px 0;
+  }
+  
+  .textInput label {
+    display: block;
+  }
+  
+  input {
+    margin-bottom: 4px;
+  }
+  
+  .submit {
+    color: white;
+    background-color: rgba(4, 128, 64, 0.8);
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 4px 8px;
+    margin: 12px 0 4px;
+  }
+  
+  .submit:hover {
+    background-color: rgba(4, 128, 64, 1);
+  }
+
   /* MEDIA QUERIES */
   
   @media screen and (min-width: 576px) {
