@@ -11,6 +11,10 @@ body {
   background-color: #39b547;
 }
 
+.projects {
+  background-color: #048040;
+}
+
 /* TYPOGRAPHY */
 
 main, .aleo {
@@ -359,7 +363,7 @@ input {
   width: auto;
   display: inline-block;
   /* Low opacity (0.4) against light main backgrounds, high opacity (0.8) against dark main backgrounds */
-  background: rgba(57, 181, 71, 0.4);
+  background: rgba(57, 181, 71, 0.8);
   width: 30%;
   min-width: 18rem;
   max-width: 24rem;
