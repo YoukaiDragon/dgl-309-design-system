@@ -245,6 +245,22 @@ h1, h2, h3, h4, h5, h6, .arimo {
   transition: max-height 0.2s ease-out;
 }
 
+/* LIST */
+ul {
+  list-style-type: none;
+}
+
+.list-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.list-header {
+  font-weight: bold;
+  font-family: 'Arimo', sans-serif;
+  padding: 8px 0;
+}
+
 
 /* CAROUSEL */
 /* Carousel container */
