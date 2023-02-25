@@ -11,6 +11,11 @@ body {
   background-color: #39b547;
 }
 
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .project-page {
   background-color: #048040;
 }
@@ -416,7 +421,7 @@ input {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 568px) {
   .menu-btn {
     visibility: hidden;
   }
@@ -440,5 +445,21 @@ input {
 
   main {
     margin-top: 132px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 60%;
   }
 }
