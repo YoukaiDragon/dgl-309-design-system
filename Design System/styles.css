@@ -22,10 +22,25 @@ ul {
 .list-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.list-column {
+    padding: 0 12px;
 }
 
 .list-header {
     margin: 0;
+}
+
+@media screen and (min-width: 786px) {
+    .list-container {
+        justify-content: space-evenly;
+    }
+
+    .list-column {
+        padding: 0;
+    }
 }
 
 main {
