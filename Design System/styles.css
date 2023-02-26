@@ -158,6 +158,14 @@ p {
     flex-direction: column;
 }
 
+.btn-states {
+    display: flex;
+}
+
+.btn-states-header {
+    margin: 0;
+}
+
 form {
     border: 1px solid black;
     display: inline-block;
