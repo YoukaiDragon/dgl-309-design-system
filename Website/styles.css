@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -449,14 +449,12 @@ input {
 
   main {
     margin-top: 132px;
+    width: 80%;
   }
-}
+
+  }
 
 @media screen and (min-width: 786px) {
-  main {
-    width: 70%;
-  }
-
   .list-container {
     justify-content: space-evenly;
   }
@@ -466,10 +464,16 @@ input {
   }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+  main {
+    width: 70%;
+  }
+
+}
 
 @media screen and (min-width: 1200px) {
   main {
-    width: 60%;
+    width: 65%;
+  }
   }
 }
