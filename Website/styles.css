@@ -428,6 +428,15 @@ input {
   background: rgba(43, 57, 144, 1);
 }
 
+footer {
+  margin-bottom: 24px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
 /* Flex Layout Classes */
 .row {
   display: flex;
