@@ -264,12 +264,11 @@ ul {
 .list-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
-.list {
-  display: flex;
-  flex-flow: column;
+.list-column {
+  padding: 0 12px;
 }
 
 /* CAROUSEL */
@@ -457,11 +456,17 @@ input {
   main {
     width: 70%;
   }
+
+  .list-container {
+    justify-content: space-evenly;
+  }
+
+  .list-column {
+    padding: 0;
+  }
 }
 
-@media screen and (min-width: 992px) {
-
-}
+@media screen and (min-width: 992px) {}
 
 @media screen and (min-width: 1200px) {
   main {
