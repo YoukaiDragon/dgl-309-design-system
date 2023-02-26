@@ -222,6 +222,11 @@ h1, h2, h3, h4, h5, h6, .arimo {
   color: white;
 }
 
+.profile-image {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ACCORDION */
 .accordion {
   background-color: rgba(0, 174, 239, 0.8);
@@ -506,6 +511,10 @@ input {
     width: 80%;
   }
 
+  .profile-image {
+    max-width: 500px;
+  }
+
   .col-s-12 {
     flex-basis: 100%;
   }
@@ -556,6 +565,10 @@ input {
 }
 
 @media screen and (min-width: 786px) {
+  .profile-text {
+    padding-left: 16px;
+  }
+
   .list-container {
     justify-content: space-evenly;
   }
