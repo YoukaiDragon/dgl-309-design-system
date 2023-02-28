@@ -46,7 +46,7 @@
                         functional, allowing the user to walk through the app and get a sense for how it would work and
                         feel as if it were a fully functioning app, but not make use of it an as actual app. This was
                         made as the main project for NIC's course on User Experience and Interface Design.</p>
-                    <button href="#" class="card-link">Card Link</a>
+                    <button href="#" class="card-link modal-notLink">Card Link</a>
                 </div>
             </div>
             <div class="modal">
@@ -68,7 +68,7 @@
                         listed on this page. Like the main app design,
                         this was built as part of the main project for NIC's User Experience and Interface Design
                         course.</p>
-                    <a href="#" class="card-link">Card Link</a>
+                    <a href="#" class="card-link modal-notLink">Card Link</a>
                 </div>
             </div>
             <div class="modal">
@@ -90,7 +90,7 @@
                         of the capstone projects for
                         my post-graduate diploma at NIC.
                     </p>
-                    <a href="#" class="card-link">Card Link</a>
+                    <a href="#" class="card-link modal-notLink">Card Link</a>
                 </div>
             </div>
             <div class="modal">
@@ -112,7 +112,7 @@
                         an unofficial website
                         created for an NIC course project, and is not an official representation of the business.
                     </p>
-                    <a href="#" class="card-link">Card Link</a>
+                    <a href="#" class="card-link modal-notLink">Card Link</a>
                 </div>
             </div>
             <div class="modal">
@@ -146,10 +146,14 @@
         // Get the <span> elements that close the modals
         let spans = document.getElementsByClassName("modal-close");
 
+        let exemptions = document.getElementsByClassName("modal-noLink");
+
         // When the user clicks on the button, open the corresponding modal
         for (let i = 0; i < btns.length; i++) {
             btns[i].onclick = function () {
-                this.nextElementSibling.style.display = "block";
+                if(!event.target.classList.contains('modal-notLink')) {
+                    this.nextElementSibling.style.display = "block";
+                }
             }
         }
         // When the user clicks on <span> (x), close the corresponding modal
