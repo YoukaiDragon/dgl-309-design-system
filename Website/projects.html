@@ -38,7 +38,7 @@
     <main>
         <h1>Projects</h1>
         <div class="cards">
-            <div class="card" id="FoodTruckApp">
+            <div class="card modal-link" id="FoodTruckApp">
                 <img src="images/FoodTruckApp.png" alt="Food Truck App">
                 <div class="card-body">
                     <p class="card-title">Food Hunter - Food Truck App Design</p>
@@ -46,10 +46,21 @@
                         functional, allowing the user to walk through the app and get a sense for how it would work and
                         feel as if it were a fully functioning app, but not make use of it an as actual app. This was
                         made as the main project for NIC's course on User Experience and Interface Design.</p>
-                    <a href="#" class="card-link">Card Link</a>
+                    <button href="#" class="card-link">Card Link</a>
                 </div>
             </div>
-            <div class="card" id="LandingPage">
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <p class="modal-header">Food Hunter - Food Truck App Design</p>
+                    <img src="images/FoodTruckApp.png" alt="Food Truck App">
+                    <p>A mockup for a Food Truck Finder app. The mockup is interactive but not
+                        functional, allowing the user to walk through the app and get a sense for how it would work and
+                        feel as if it were a fully functioning app, but not make use of it an as actual app. This was
+                        made as the main project for NIC's course on User Experience and Interface Design.</p>
+                </div>
+            </div>
+            <div class="card modal-link" id="LandingPage">
                 <img src="images/LandingPageImage.png" alt="Landing Page">
                 <div class="card-body">
                     <p class="card-title">Food Hunter - Food Truck App Landing Page</p>
@@ -60,7 +71,18 @@
                     <a href="#" class="card-link">Card Link</a>
                 </div>
             </div>
-            <div class="card" id="GameProject">
+            <div class="modal">
+                <div class="modal-content">
+                    <p class="modal-header">Food Hunter - Food Truck App Landing Page</p>
+                    <span class="modal-close">&times;</span>
+                    <img src="images/LandingPageImage.png" alt="Landing Page">
+                    <p>A landing page designed to gather emails for the Food Truck Finder app also
+                        listed on this page. Like the main app design,
+                        this was built as part of the main project for NIC's User Experience and Interface Design
+                        course.</p>
+                </div>
+            </div>
+            <div class="card modal-link" id="GameProject">
                 <img src="images/GameProject.png" alt="Game Project">
                 <div class="card-body">
                     <p class="card-title">Javascript game - Space Shooter</p>
@@ -71,10 +93,21 @@
                     <a href="#" class="card-link">Card Link</a>
                 </div>
             </div>
-            <div class="card" id="WebsiteProject">
+            <div class="modal">
+                <div class="modal-content">
+                    <p class="modal-header">Javascript Game - Space Shooter</p>
+                    <span class="modal-close">&times;</span>
+                    <img src="images/GameProject.png" alt="Game Project">
+                    <p>A retro-inspired top-down 2D space shooter coded in Javascript, serving as one
+                        of the capstone projects for
+                        my post-graduate diploma at NIC.
+                    </p>
+                </div>
+            </div>
+            <div class="card modal-link" id="WebsiteProject">
                 <img src="images/WebsiteProjectPhoto.png" alt="Website Project">
                 <div class="card-body">
-                    <p class="card-title">Games & Grounds Website</p>
+                    <p class="card-title">Games & Grounds Website Design</p>
                     <p class="card-text">A website for the Coffee Shop / Game Store "Games & Grounds". This project is
                         an unofficial website
                         created for an NIC course project, and is not an official representation of the business.
@@ -82,16 +115,57 @@
                     <a href="#" class="card-link">Card Link</a>
                 </div>
             </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <p class="modal-header">Game & Grounds Website Design</p>
+                    <span class="modal-close">&times;</span>
+                    <img src="images/WebsiteProjectPhoto.png" alt="Website Project">
+                    <p>A website for the Coffee Shop / Game Store "Games & Grounds". This project is
+                        an unofficial website
+                        created for an NIC course project, and is not an official representation of the business.
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="row">
         <div class="col-3"></div>
-        <div class="col-2"><a href="https://github.com/YoukaiDragon" class="socialMedia"><img src="images/github-icon.png" alt="github"></a></div>
-        <div class="col-2"><a href="https://www.linkedin.com/in/tyson-foster-17a229161/" class="socialMedia"><img src="images/linkedin-icon.png" alt="linkedIn"></a></div>
-        <div class="col-2"><a href="https://www.facebook.com/profile.php?id=100004333519190" class="socialMedia"><img src="images/facebook-icon.png" alt="facebook"></a></div>
+        <div class="col-2"><a href="https://github.com/YoukaiDragon" class="socialMedia"><img
+                    src="images/github-icon.png" alt="github"></a></div>
+        <div class="col-2"><a href="https://www.linkedin.com/in/tyson-foster-17a229161/" class="socialMedia"><img
+                    src="images/linkedin-icon.png" alt="linkedIn"></a></div>
+        <div class="col-2"><a href="https://www.facebook.com/profile.php?id=100004333519190" class="socialMedia"><img
+                    src="images/facebook-icon.png" alt="facebook"></a></div>
         <div class="col-3"></div>
     </footer>
     <script src="scripts/navbar.js"></script>
+    <script>
+        // Get the buttons that open the modals
+        let btns = document.getElementsByClassName("modal-link");
+
+        // Get the <span> elements that close the modals
+        let spans = document.getElementsByClassName("modal-close");
+
+        // When the user clicks on the button, open the corresponding modal
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                this.nextElementSibling.style.display = "block";
+            }
+        }
+        // When the user clicks on <span> (x), close the corresponding modal
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].onclick = function () {
+                this.parentElement.parentElement.style.display = "none";
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+            }
+        } 
+    </script>
 </body>
 
 </html>
