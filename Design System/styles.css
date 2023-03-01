@@ -211,21 +211,18 @@ input {
     text-decoration: underline;
 }
 
-.cards {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.card-container {
+    align-self: stretch;
+    margin: 0 0 8px;
 }
 
 .card {
     border-radius: 5%;
     width: auto;
-    display: inline-block;
+    height: 100%;
+    /* Low opacity (0.4) against light main backgrounds, high opacity (0.8) against dark main backgrounds */
     background: rgba(57, 181, 71, 0.4);
-    width: 30%;
-    min-width: 18rem;
-    max-width: 24rem;
-    margin: 8px;
+    margin: 0 8px;
 }
 
 .card img {
@@ -235,21 +232,31 @@ input {
 }
 
 .card-body {
-    padding: 8px 16px 32px;
+    padding: 8px;
 }
 
 .card-title {
     margin: 0;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    width: 100%;
 }
+
+.card-text {
+    width: 100%;
+}
+
 
 .card-link {
     text-decoration: none;
     border: 1px solid black;
+    border-radius: 5%;
     padding: 8px;
     background: rgba(43, 57, 144, 0.8);
     color: white;
+    display: block;
+    width: auto;
+    text-align: center;
 }
 
 .card-link:hover {
