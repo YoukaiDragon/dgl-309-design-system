@@ -86,9 +86,45 @@
                 </div>
             </div>
         </div>
+        <p>Larger blocks of content, such as cards or images paired with captions, can have modals linked to
+            the entire block by adding the 'modal-link' class to the outermost container wrapping the content.
+        </p>
+        <p>To have part of a content block, such as a button or a link, not open the modal, add the 'modal-noLink' class
+            to that element</p>
+        <div style="display: flex; flex-flow: row wrap; justify-content: space-evenly;">
+            <div class="modal-link">
+                <img id="image-modal-link" src="images/modal-placeholder.png" alt="placeholder">
+                <p>This text links to the modal</p>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <img id="image-modal-content" src="images/modal-placeholder.png" alt="placeholder">
+                    <p>Modal text content</p>
+                </div>
+            </div>
+            <div class="modal-link">
+                <img id="image-modal-link" src="images/modal-placeholder.png" alt="placeholder">
+                <p class="modal-noLink">This text doesn't link to the modal</p>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <img id="image-modal-content" src="images/modal-placeholder.png" alt="placeholder">
+                    <p>Modal text content</p>
+                </div>
+            </div>
+        </div>
         <p>To add a modal, copy the CSS and JS from the codepen below, as well as the section
-            of HTML based on the type of modal you are using (button or image), and replace the content
+            of HTML based on the type of modal you are using (button, image, or block) and replace the content
             of both the link and the modal.
+        </p>
+        <p>Alternatively, after copying the CSS and JS, add the modal-link class to the tag that will be used
+            to open the modal, immediately afterwards place the content of the modal in a div with the .modal-content
+            class,
+            inside of a div with the .modal class. Ensure there are no tags between the tag with the .modal-link class
+            and the
+            div with the .modal class, or the modal will not open!
         </p>
         <p>Button and image modal links should follow the rules listed in the
             <a href="spacing.html">Spacing</a> and <a href="images.html">Images</a> guidelines respectively
@@ -107,14 +143,16 @@
         // Base Modals JS from W3Schools Tutorial, modified to work with multiple modals on page
         // Get the buttons that open the modals
         let btns = document.getElementsByClassName("modal-link");
-    
+
         // Get the <span> elements that close the modals
         let spans = document.getElementsByClassName("modal-close");
-    
+
         // When the user clicks on the button, open the corresponding modal
         for (let i = 0; i < btns.length; i++) {
             btns[i].onclick = function () {
-                this.nextElementSibling.style.display = "block";
+                if (!event.target.classList.contains('modal-noLink')) {
+                    this.nextElementSibling.style.display = "block";
+                }
             }
         }
         // When the user clicks on <span> (x), close the corresponding modal
@@ -123,13 +161,13 @@
                 this.parentElement.parentElement.style.display = "none";
             }
         }
-    
+
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
             if (event.target.classList.contains("modal")) {
                 event.target.style.display = "none";
             }
-        }  
+        } 
     </script>
     <script src="navbar.js"></script>
 </body>
