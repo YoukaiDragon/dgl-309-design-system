@@ -167,8 +167,8 @@ p {
 }
 
 form {
+    background-color: rgb(165, 165, 165);
     border: 1px solid black;
-    display: inline-block;
     padding: 8px;
 }
 
