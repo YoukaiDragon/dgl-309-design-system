@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6, .arimo {
 }
 
 .profile-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -586,10 +586,6 @@ footer div {
     width: 80%;
   }
 
-  .profile-image {
-    max-width: 500px;
-  }
-
   form {
     width: 100%;
     max-width: 600px;
@@ -713,6 +709,10 @@ footer div {
     width: 70%;
   }
 
+  .profile-text {
+    font-size: 1.6rem;
+  }
+
   .col-l-12 {
     flex-basis: 100%;
   }
@@ -764,7 +764,7 @@ footer div {
 
 @media screen and (min-width: 1200px) {
   main {
-    width: 65%;
+    width: 60%;
   }
 
   .col-xl-12 {
