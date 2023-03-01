@@ -28,9 +28,6 @@
                     <li class="menu-nav__item">
                         <a href="projects.html">Projects</a>
                     </li>
-                    <li class="menu-nav__item">
-                        <a href="contact.html">Contact</a>
-                    </li>
                 </ul>
             </nav>
         </div>
@@ -149,7 +146,7 @@
         // When the user clicks on the button, open the corresponding modal
         for (let i = 0; i < btns.length; i++) {
             btns[i].onclick = function () {
-                if(!event.target.classList.contains('modal-noLink')) {
+                if (!event.target.classList.contains('modal-noLink')) {
                     this.nextElementSibling.style.display = "block";
                 }
             }
