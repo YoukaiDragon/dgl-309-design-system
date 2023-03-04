@@ -16,6 +16,10 @@ main {
   margin: 0 auto;
 }
 
+.title {
+  padding-top: 24px;
+}
+
 /* TYPOGRAPHY */
 
 main, .aleo {
