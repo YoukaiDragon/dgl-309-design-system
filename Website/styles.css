@@ -8,16 +8,12 @@ html {
 
 /* BACKGROUND */
 body {
-  background-color: #39b547;
+  background-color: #fff;
 }
 
 main {
   width: 90%;
   margin: 0 auto;
-}
-
-.project-page {
-  background-color: #048040;
 }
 
 /* TYPOGRAPHY */
