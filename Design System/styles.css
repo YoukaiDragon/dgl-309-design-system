@@ -9,6 +9,15 @@ body {
 
 main {
     margin: 0 12px;
+    font-family: 'Aleo, serif';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+    padding-top: 24px;
 }
 
 p {
@@ -425,7 +434,7 @@ input {
     flex-flow: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     background: rgba(25, 25, 25, 1);
     list-style-type: none;
@@ -435,12 +444,18 @@ input {
 }
 
 .logo-container {
-    float: left;
-    width: auto;
-    height: 100vh;
+    height: 10vh;
     background: rgba(25, 25, 25, 1);
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
+}
+
+.logo-container p {
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 48px;
+    left: 35%;
 }
 
 .nav .logo {
@@ -462,6 +477,7 @@ input {
 .logo-container.open {
     transform: translateY(0);
 }
+
 
 .nav .menu-nav__item {
     transition: all 0.5s ease-in-out;
@@ -501,8 +517,15 @@ input {
     }
 
     .logo-container {
+        float: left;
         height: 132px;
+        width: 245px;
         transform: translateY(0);
+    }
+
+    .logo-container p {
+        top: 16px;
+        left: 128px;
     }
 
     main {
