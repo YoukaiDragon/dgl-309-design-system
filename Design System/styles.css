@@ -8,10 +8,6 @@ body {
     font-family: 'Aleo', serif;
 }
 
-main {
-    margin: 0 12px;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Arimo', sans-serif;
 }
@@ -42,7 +38,16 @@ ul {
     margin: 0;
 }
 
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 786px) {
+    main {
+        padding-left: 200px;
+    }
+
     .list-container {
         justify-content: space-evenly;
     }
@@ -52,20 +57,16 @@ ul {
     }
 }
 
-main {
-    width: 80%;
-    margin: 0 auto;
-}
-
 @media screen and (min-width: 992px) {
     main {
-        width: 70%;
+        width: 80%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     main {
-        width: 60%;
+        width: 70%;
+        max-width: 1400px;
     }
 }
 
@@ -528,7 +529,7 @@ input {
     .nav .menu-nav {
         margin: 0 auto;
         padding-left: 8px;
-        height:fill;
+        height: fill;
         transform: translateX(0);
         flex-direction: column;
         justify-content: flex-start;
@@ -548,12 +549,7 @@ input {
 
     .logo-container p {
         padding: 16px 16px 0;
-        position:initial;
-    }
-
-    main {
-        margin-left: 200px;
-        width: auto;
+        position: initial;
     }
 }
 
