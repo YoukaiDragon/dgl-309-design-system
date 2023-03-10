@@ -454,14 +454,14 @@ input {
     background: rgba(25, 25, 25, 1);
     list-style-type: none;
     padding-right: 2rem;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: all 0.5s ease-in-out;
 }
 
 .logo-container {
     height: 10vh;
     background: rgba(25, 25, 25, 1);
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: all 0.5s ease-in-out;
 }
 
@@ -514,37 +514,46 @@ input {
     color: white;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 786px) {
     .menu-btn {
         visibility: hidden;
     }
 
     .nav {
         visibility: visible;
+        height: 100%;
+        width: 200px;
     }
 
     .nav .menu-nav {
-        height: 132px;
         margin: 0 auto;
-        transform: translateY(0);
-        flex-flow: row wrap;
-        justify-content: flex-end;
+        padding-left: 8px;
+        height:fill;
+        transform: translateX(0);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .menu-nav__item {
+        margin-bottom: 8px;
     }
 
     .logo-container {
-        float: left;
-        height: 132px;
-        width: 245px;
-        transform: translateY(0);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0);
     }
 
     .logo-container p {
-        top: 16px;
-        left: 128px;
+        padding: 16px 16px 0;
+        position:initial;
     }
 
     main {
-        margin-top: 132px;
+        margin-left: 200px;
+        width: auto;
     }
 }
 
