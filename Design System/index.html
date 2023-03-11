@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Foster Design System</title>
+    <title>Foster Design System - Typography</title>
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
@@ -17,7 +17,7 @@
         </div>
         <nav class="nav">
             <div class="logo-container">
-                <a class="logo" href="index.html"><img src="./images/Logo.png" alt="logo"></a>
+                <a class="logo" href=""><img src="./images/Logo.png" alt="logo"></a>
                 <p>Foster Design System</p>
             </div>
             <ul class="menu-nav">
@@ -25,7 +25,7 @@
                     <p>Guidelines</p>
                 </li>
                 <li class="menu-nav__item">
-                    <a href="typography.html">Typography</a>
+                    <a href="index.html">Typography</a>
                 </li>
                 <li class="menu-nav__item">
                     <a href="colours.html">Colours</a>
@@ -64,7 +64,127 @@
         </nav>
     </header>
     <main>
-
+        <div class="typography">
+            <h1>Typography</h1>
+            <p>To use all of the typefaces listed below, add the html from the codepen below into the head of each
+                page of your website, and add the body and header CSS rules to your stylesheet. The remaining CSS rules are
+                classes to apply specific font weights/sizes to specific elements.
+            </p>
+                <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="BaOmKjP" data-user="Foster-Design-System" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/Foster-Design-System/pen/BaOmKjP">
+                    Typography</a> by Tyson Foster (<a href="https://codepen.io/Foster-Design-System">@Foster-Design-System</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <p>Font sizes are defined in ems using a default body font size of 16px</p>
+            <div style="display: flex">
+                <ul>
+                    <li>
+                        <h3>Font sizes</h3>
+                    </li>
+                    <li>XXS: 0.8em</li>
+                    <li>XS: 0.9em</li>
+                    <li>S: 1em</li>
+                    <li>M: 1.2em</li>
+                    <li>L: 1.5em</li>
+                    <li>XL: 1.8em</li>
+                    <li>XXL: 2em</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Font weights</h3>
+                    </li>
+                    <li>Light: 300</li>
+                    <li>Regular: 400</li>
+                    <li>Semibold: 600</li>
+                    <li>Bold: 700</li>
+                </ul>
+            </div>
+            <h2>Header Typeface: Arimo</h2>
+            <div class="typography-headers">
+                <h1><span class="arimo regular">H1 Regular</span> <span class="arimo regular italic">Regular
+                        Italic</span>
+                    <span class="arimo semibold">Semibold</span> <span class="arimo semibold italic">Semibold
+                        Italic</span>
+                    <span class="arimo bold">Bold</span> <span class="arimo bold italic">Bold Italic</span>
+                </h1>
+                <h2><span class="arimo regular">H2 Regular</span> <span class="arimo regular italic">Regular
+                        Italic</span>
+                    <span class="arimo semibold">Semibold</span> <span class="arimo semibold italic">Semibold
+                        Italic</span>
+                    <span class="arimo bold">Bold</span> <span class="arimo bold italic">Bold Italic</span>
+                </h2>
+                <h3><span class="arimo regular">H3 Regular</span> <span class="arimo regular italic">Regular
+                        Italic</span>
+                    <span class="arimo semibold">Semibold</span> <span class="arimo semibold italic">Semibold
+                        Italic</span>
+                    <span class="arimo bold">Bold</span> <span class="arimo bold italic">Bold Italic</span>
+                </h3>
+                <h4><span class="arimo regular">H4 Regular</span> <span class="arimo regular italic">Regular
+                        Italic</span>
+                    <span class="arimo semibold">Semibold</span> <span class="arimo semibold italic">Semibold
+                        Italic</span>
+                    <span class="arimo bold">Bold</span> <span class="arimo bold italic">Bold Italic</span>
+                </h4>
+                <h5><span class="arimo regular">H5 Regular</span> <span class="arimo regular italic">Regular
+                        Italic</span>
+                    <span class="arimo semibold">Semibold</span> <span class="arimo semibold italic">Semibold
+                        Italic</span>
+                    <span class="arimo bold">Bold</span> <span class="arimo bold italic">Bold Italic</span>
+                </h5>
+                <h6><span class="arimo regular">H6 Regular</span> <span class="arimo regular italic">Regular
+                        Italic</span>
+                    <span class="arimo semibold">Semibold</span> <span class="arimo semibold italic">Semibold
+                        Italic</span>
+                    <span class="arimo bold">Bold</span> <span class="arimo bold italic">Bold Italic</span>
+                </h6>
+            </div>
+            <h2>Content Typeface: Aleo</h2>
+            <div class="typography-content">
+                <p class=font-xxs>XXS font: <span class="aleo light">Light text for image captions</span> <span
+                        class="aleo light italic">Light italic text for image captions</span> <span
+                        class="aleo regular">Regular text for body content</span> <span
+                        class="aleo regular italic">Regular italic text for body content</span> <span
+                        class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
+                        italic text for emphasized content</span></p>
+                <p class=font-xs>XS font: <span class="aleo light">Light text for image captions</span> <span
+                        class="aleo light italic">Light italic text for image captions</span> <span
+                        class="aleo regular">Regular text for body content</span> <span
+                        class="aleo regular italic">Regular italic text for body content</span> <span
+                        class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
+                        italic text for emphasized content</span></p>
+                <p class=font-s>S font: <span class="aleo light">Light text for image captions</span> <span
+                        class="aleo light italic">Light italic text for image captions</span> <span
+                        class="aleo regular">Regular text for body content</span> <span
+                        class="aleo regular italic">Regular italic text for body content</span> <span
+                        class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
+                        italic text for emphasized content</span></p>
+                <p class=font-m>M font: <span class="aleo light">Light text for image captions</span> <span
+                        class="aleo light italic">Light italic text for image captions</span> <span
+                        class="aleo regular">Regular text for body content</span> <span
+                        class="aleo regular italic">Regular italic text for body content</span> <span
+                        class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
+                        italic text for emphasized content</span></p>
+                <p class=font-l>L font: <span class="aleo light">Light text for image captions</span> <span
+                        class="aleo light italic">Light italic text for image captions</span> <span
+                        class="aleo regular">Regular text for body content</span> <span
+                        class="aleo regular italic">Regular italic text for body content</span> <span
+                        class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
+                        italic text for emphasized content</span></p>
+                <p class=font-xl>XL font: <span class="aleo light">Light text for image captions</span> <span
+                        class="aleo light italic">Light italic text for image captions</span> <span
+                        class="aleo regular">Regular text for body content</span> <span
+                        class="aleo regular italic">Regular italic text for body content</span> <span
+                        class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
+                        italic text for emphasized content</span></p>
+                <p class=font-xxl>XXL font: <span class="aleo light">Light text for image captions</span> <span
+                        class="aleo light italic">Light italic text for image captions</span> <span
+                        class="aleo regular">Regular text for body content</span> <span
+                        class="aleo regular italic">Regular italic text for body content</span> <span
+                        class="aleo bold">Bold text for emphasized content</span> <span class="aleo bold italic">Bold
+                        italic text for emphasized content</span></p>
+            </div>
+        </div>
     </main>
     <script src="navbar.js"></script>
 </body>
