@@ -230,6 +230,7 @@ h1, h2, h3, h4, h5, h6, .arimo {
 
 .profile-image {
   width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
@@ -433,7 +434,7 @@ input {
 
 .card-link:hover {
   color: rgba(43, 57, 144, 1);
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 /* Modals */
@@ -656,7 +657,10 @@ footer div {
 
 @media screen and (min-width: 786px) {
   .profile-text {
-    padding-left: 16px;
+    margin-top: 0;
+    padding-left: 24px;
+    font-size: 1.2rem;
+    align-self: center;
   }
 
   .list-container {
@@ -719,10 +723,6 @@ footer div {
 @media screen and (min-width: 992px) {
   main {
     width: 70%;
-  }
-
-  .profile-text {
-    font-size: 1.6rem;
   }
 
   .col-l-12 {
