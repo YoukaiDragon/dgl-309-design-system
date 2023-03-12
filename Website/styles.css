@@ -20,6 +20,11 @@ main {
   padding-top: 24px;
 }
 
+.skills {
+  background-color: rgba(4, 128, 64, 0.4);
+  padding: 8px;
+}
+
 /* TYPOGRAPHY */
 
 main, .aleo {
