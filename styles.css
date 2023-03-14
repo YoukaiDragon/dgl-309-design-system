@@ -336,6 +336,12 @@ input {
     /* Black w/ opacity */
 }
 
+@media screen and (min-width: 786px) {
+    .modal {
+        padding-left: 200px;
+    }
+}
+
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
@@ -362,7 +368,7 @@ input {
     cursor: pointer;
 }
 
-#image-modal-link {
+.image-modal-link {
     width: 400px;
     height: auto;
 }
@@ -537,7 +543,6 @@ input {
     .nav .menu-nav {
         margin: 0 auto;
         padding-left: 8px;
-        height: fill;
         transform: translateX(0);
         flex-direction: column;
         justify-content: flex-start;
