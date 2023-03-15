@@ -369,7 +369,9 @@ input {
 }
 
 .image-modal-link {
-    width: 400px;
+
+    width: 90%;
+    max-width: 600px;
     height: auto;
 }
 
