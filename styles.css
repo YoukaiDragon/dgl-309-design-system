@@ -218,7 +218,8 @@ input {
     margin: 12px 0 4px;
 }
 
-.submit:hover {
+.submit:hover,
+.submit:focus-visible {
     background-color: rgba(4, 128, 64, 1);
 }
 
@@ -231,7 +232,8 @@ input {
     width: auto;
 }
 
-.link-list a:hover {
+.link-list a:hover,
+.link-list a:focus-visible {
     color: rgba(0, 174, 239, 1);
     text-decoration: underline;
 }
@@ -284,7 +286,8 @@ input {
     text-align: center;
 }
 
-.card-link:hover {
+.card-link:hover,
+.card-link:focus-visible {
     background: rgba(43, 57, 144, 1);
 }
 
@@ -302,7 +305,8 @@ input {
     transition: 0.4s;
 }
 
-.accordion-active, .accordion:hover {
+.accordion-active, .accordion:hover,
+.accordion:focus-visible {
     background-color: rgba(0, 174, 239, 1);
 }
 
@@ -366,7 +370,7 @@ input {
 }
 
 .modal-close:hover,
-.modal-close:focus {
+.modal-close:focus-visible {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -531,7 +535,8 @@ input {
     color: rgb(115, 218, 255);
 }
 
-.nav .menu-nav__item a:hover {
+.nav .menu-nav__item a:hover,
+.nav .menu-nav__item a:focus-visible {
     color: white;
 }
 
@@ -617,7 +622,9 @@ input {
 
 /*when the user hovers,add a black background with some little opacity */
 .carousel-back:hover,
-.carousel-forward:hover {
+.carousel-forward:hover,
+.carousel-back:focus-visible,
+.carousel-forward:focus-visible {
     background-color: rgba(25, 25, 25, 0.8);
 }
 
