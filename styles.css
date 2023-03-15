@@ -336,6 +336,10 @@ input {
     /* Black w/ opacity */
 }
 
+.modal-btn {
+    padding: 4px 8px;
+}
+
 @media screen and (min-width: 786px) {
     .modal {
         padding-left: 200px;
