@@ -251,6 +251,10 @@ input {
     text-decoration: underline;
 }
 
+.card h2 {
+    text-align: center;
+}
+
 .card-container {
     align-self: stretch;
     margin: 0 0 8px;
