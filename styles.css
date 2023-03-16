@@ -554,14 +554,17 @@ input {
     color: #fff;
     font-weight: bold;
     font-family: 'Arimo', sans-serif;
-    padding-left: 4px;
+}
+
+.menu-nav__header p {
+    margin: 0 0 8px;
 }
 
 .nav .menu-nav__item a {
     text-decoration: none;
     color: rgba(0, 174, 239, 1);
     display: inline-block;
-    padding: 4px;
+    padding: 0px 0 4px 8px;
     font-size: 1.2rem;
 }
 
@@ -592,6 +595,10 @@ input {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    .menu-nav__header p {
+        margin-left: 8px;
     }
 
     .menu-nav__item {
