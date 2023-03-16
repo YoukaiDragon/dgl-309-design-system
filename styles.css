@@ -492,11 +492,11 @@ input {
     align-items: center;
     justify-content: space-evenly;
     height: 90vh;
-    padding-bottom: 24px;
     overflow: hidden;
     background: rgba(25, 25, 25, 1);
     list-style-type: none;
     padding-right: 2rem;
+    padding-bottom: 36px;
     transform: translateX(-100%);
     transition: all 0.5s ease-in-out;
 }
