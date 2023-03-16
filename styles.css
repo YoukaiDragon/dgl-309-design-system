@@ -490,7 +490,7 @@ input {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     height: 90vh;
     overflow: hidden;
     background: rgba(25, 25, 25, 1);
@@ -559,7 +559,7 @@ input {
 }
 
 .menu-nav__header p {
-    margin: 0 0 4px;
+    margin: 0 0 8px;
 }
 
 .menu-nav__item a {
@@ -570,7 +570,7 @@ input {
     text-align: center;
     font-size: 1.2rem;
     width: 100%;
-    padding: 8px 0;
+    margin-bottom: 8px;
 }
 
 .menu-nav__item a:visited {
