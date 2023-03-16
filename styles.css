@@ -492,6 +492,7 @@ input {
     align-items: center;
     justify-content: space-evenly;
     height: 90vh;
+    padding-bottom: 24px;
     overflow: hidden;
     background: rgba(25, 25, 25, 1);
     list-style-type: none;
