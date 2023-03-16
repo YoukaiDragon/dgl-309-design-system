@@ -545,35 +545,40 @@ input {
 }
 
 
-.nav .menu-nav__item {
+.menu-nav__item {
     transition: all 0.5s ease-in-out;
+    width: 800%;
 }
 
-.nav .menu-nav__header {
+.menu-nav__header {
     transition: all 0.5s ease-in-out;
     color: #fff;
     font-weight: bold;
     font-family: 'Arimo', sans-serif;
+    display:inline-block;
 }
 
 .menu-nav__header p {
     margin: 0 0 8px;
 }
 
-.nav .menu-nav__item a {
+.menu-nav__item a {
     text-decoration: none;
     color: rgba(0, 174, 239, 1);
     display: inline-block;
     padding: 0px 0 4px 8px;
+    text-align: center;
     font-size: 1.2rem;
+    width: 100%;
+    padding: 16px 0;
 }
 
-.nav .menu-nav__item a:visited {
+.menu-nav__item a:visited {
     color: rgb(115, 218, 255);
 }
 
-.nav .menu-nav__item a:hover,
-.nav .menu-nav__item a:focus-visible {
+.menu-nav__item a:hover,
+.menu-nav__item a:focus-visible {
     color: white;
 }
 
@@ -603,6 +608,12 @@ input {
 
     .menu-nav__item {
         margin-bottom: 8px;
+        width: auto;
+    }
+
+    .menu-nav__item a {
+        width: auto;
+        padding-left: 8px;
     }
 
     .logo-container {
