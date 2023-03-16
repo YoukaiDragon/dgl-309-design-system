@@ -559,7 +559,7 @@ input {
 }
 
 .menu-nav__header p {
-    margin: 0 0 8px;
+    margin: 0 0 4px;
 }
 
 .menu-nav__item a {
@@ -570,7 +570,7 @@ input {
     text-align: center;
     font-size: 1.2rem;
     width: 100%;
-    padding: 16px 0;
+    padding: 8px 0;
 }
 
 .menu-nav__item a:visited {
@@ -624,7 +624,7 @@ input {
     }
 
     .logo-container p {
-        padding: 16px 16px 0;
+        padding: 0 16px 0;
         position: initial;
     }
 }
