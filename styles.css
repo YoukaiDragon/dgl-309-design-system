@@ -46,7 +46,7 @@ main {
 
 @media screen and (min-width: 786px) {
     main {
-        padding-left: 200px;
+        padding-left: 275px;
     }
 
     .list-container {
@@ -365,7 +365,7 @@ input {
 
 @media screen and (min-width: 786px) {
     .modal {
-        padding-left: 200px;
+        padding-left: 275px;
     }
 }
 
@@ -589,7 +589,7 @@ input {
     .nav {
         visibility: visible;
         height: 100%;
-        width: 200px;
+        width: 275px;
     }
 
     .nav .menu-nav {
