@@ -263,7 +263,6 @@ input {
 }
 
 .card {
-    border-radius: 5%;
     width: auto;
     height: 100%;
     /* Low opacity (0.4) against light main backgrounds, high opacity (0.8) against dark main backgrounds */
@@ -274,7 +273,6 @@ input {
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 5% 5% 0 0;
 }
 
 .card-body {
@@ -555,7 +553,7 @@ input {
     color: #fff;
     font-weight: bold;
     font-family: 'Arimo', sans-serif;
-    display:inline-block;
+    display: inline-block;
 }
 
 .menu-nav__header p {
