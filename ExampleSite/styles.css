@@ -23,6 +23,7 @@ main {
 
 .about {
   padding: 16px;
+  background-color: #03964A
 }
 
 .education {
@@ -30,7 +31,7 @@ main {
 }
 
 .skills {
-  background-color: rgba(4, 128, 64, 0.4);
+  background-color: #03964A;
   padding: 8px;
 }
 
