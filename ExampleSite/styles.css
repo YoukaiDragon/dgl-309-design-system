@@ -20,6 +20,10 @@ main {
   padding-top: 24px;
 }
 
+.education {
+  margin-bottom: 16px;
+}
+
 .skills {
   background-color: rgba(4, 128, 64, 0.4);
   padding: 8px;
@@ -527,6 +531,9 @@ input {
   height: auto;
 }
 
+.contact-form {
+  margin-bottom: 32px;
+}
 footer {
   margin: 24px 0;
 }
