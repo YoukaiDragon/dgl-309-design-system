@@ -23,7 +23,7 @@ main {
 
 .about {
   padding: 16px;
-  background-color: #03964A
+  background-color: #03964A;
 }
 
 .education {
@@ -375,7 +375,7 @@ ul {
   background-color: rgba(25, 25, 25, 0.8);
 }
 
-/* CONTACT PAGE */
+/* CONTACT */
 form {
   background-color: rgb(165, 165, 165);
   border: 1px solid black;
