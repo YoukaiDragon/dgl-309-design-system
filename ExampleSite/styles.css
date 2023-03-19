@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6, .arimo {
   text-align: center;
 }
 
+p {
+  max-width: 70ch;
+}
+
 .font-xxs {
   font-size: 0.8em;
 }
