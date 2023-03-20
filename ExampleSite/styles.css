@@ -260,9 +260,10 @@ p {
 }
 
 .profile-image {
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   height: auto;
+  margin: 0 auto;
 }
 
 /* ACCORDION */
@@ -778,9 +779,14 @@ footer div {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 998px) {
   main {
     width: 70%;
+  }
+
+  .profile-image {
+    margin: 0;
+    width: 400px;
   }
 
   .col-l-12 {
