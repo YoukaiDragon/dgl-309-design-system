@@ -17,6 +17,10 @@ main {
   margin: 0 auto;
 }
 
+section {
+  margin-bottom: 16px;
+}
+
 .title {
   padding-top: 24px;
 }
@@ -33,6 +37,7 @@ main {
 .skills {
   background-color: #03964A;
   padding: 8px;
+  margin-bottom: 48px;
 }
 
 /* TYPOGRAPHY */
@@ -43,8 +48,17 @@ main, .aleo {
 
 h1, h2, h3, h4, h5, h6, .arimo {
   font-family: 'Arimo', sans-serif;
-  text-align: center;
+  text-align: left;
   color: #191919;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.contact-header {
+  text-align: center;
 }
 
 p {
