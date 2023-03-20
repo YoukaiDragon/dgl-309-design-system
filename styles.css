@@ -199,6 +199,10 @@ form {
     padding: 8px;
 }
 
+.form-header {
+    text-align: center;
+}
+
 label {
     margin: 4px 0;
 }
