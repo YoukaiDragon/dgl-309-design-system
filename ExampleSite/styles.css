@@ -789,6 +789,10 @@ footer div {
     width: 400px;
   }
 
+  .row {
+    flex-flow: row;
+  }
+
   .col-l-12 {
     flex-basis: 100%;
   }
