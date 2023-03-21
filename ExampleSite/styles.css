@@ -9,7 +9,8 @@ html {
 /* BACKGROUND */
 body {
   background-color: #fff;
-
+  font-size: 16px;
+  font-family: 'Aleo', serif;
 }
 
 main {
@@ -40,13 +41,7 @@ section {
   margin-bottom: 48px;
 }
 
-/* TYPOGRAPHY */
-
-main, .aleo {
-  font-family: 'Aleo', serif;
-}
-
-h1, h2, h3, h4, h5, h6, .arimo {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Arimo', sans-serif;
   text-align: left;
   color: #191919;
@@ -54,7 +49,7 @@ h1, h2, h3, h4, h5, h6, .arimo {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .contact-header {
@@ -247,7 +242,7 @@ p {
   color: rgba(0, 174, 239, 1);
   display: inline-block;
   padding: 12px;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .nav .menu-nav__item a:visited {
@@ -277,7 +272,7 @@ p {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   transition: 0.4s;
 }
 
@@ -510,7 +505,7 @@ input {
 .modal-header {
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 /* Modal Content/Box */
@@ -718,7 +713,7 @@ footer div {
   .profile-text {
     margin-top: 0;
     padding-left: 24px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     align-self: center;
   }
 
