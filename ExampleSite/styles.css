@@ -784,8 +784,8 @@ footer div {
     width: 400px;
   }
 
-  .row {
-    flex-flow: row;
+  .about {
+    flex-wrap: nowrap;
   }
 
   .col-l-12 {
