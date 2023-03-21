@@ -479,7 +479,6 @@ input {
 
 .card-link:hover,
 .card-link:focus-visible {
-  color: rgba(43, 57, 144, 1);
   text-decoration: underline;
 }
 
