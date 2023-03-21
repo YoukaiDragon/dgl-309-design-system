@@ -272,6 +272,7 @@ input {
     /* Low opacity (0.4) against light main backgrounds, high opacity (0.8) against dark main backgrounds */
     background: rgba(57, 181, 71, 0.4);
     margin: 0 8px;
+    position: relative;
 }
 
 .card img {
@@ -292,24 +293,23 @@ input {
 
 .card-text {
     width: 100%;
+    padding-bottom: 24px;
 }
 
 
 .card-link {
     text-decoration: none;
-    border: 1px solid black;
-    border-radius: 5%;
     padding: 8px;
-    background: rgba(43, 57, 144, 0.8);
-    color: white;
     display: block;
     width: auto;
-    text-align: center;
+    position: absolute;
+    bottom: 0px;
 }
 
 .card-link:hover,
 .card-link:focus-visible {
-    background: rgba(43, 57, 144, 1);
+    color: rgba(43, 57, 144, 1);
+    text-decoration: underline;
 }
 
 .accordion {
