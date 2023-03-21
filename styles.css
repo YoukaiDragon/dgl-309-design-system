@@ -211,6 +211,12 @@ label {
     display: block;
 }
 
+.message {
+    width: 90%;
+}
+
+
+
 input {
     margin-bottom: 4px;
 }
@@ -308,7 +314,6 @@ input {
 
 .card-link:hover,
 .card-link:focus-visible {
-    color: rgba(43, 57, 144, 1);
     text-decoration: underline;
 }
 
