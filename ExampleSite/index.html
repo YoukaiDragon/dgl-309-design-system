@@ -41,8 +41,8 @@
         <section class="intro">
             <h1 class="title">Tyson Foster</h1>
             <div class="row about">
-                <img width="400" height="400" class="profile-image col-12 col-l-6"
-                    src="images/profile-picture.webp" alt="profile">
+                <img width="400" height="400" class="profile-image col-12 col-l-6" src="images/profile-picture.webp"
+                    alt="profile">
                 <p class="profile-text col-12 col-l-6">After having studied music and computer science
                     at
                     the University of
@@ -117,20 +117,20 @@
 
                 <!-- Full images with numbers and message Info -->
                 <div class="carousel-container">
-                    <a href="projects.html#FoodTruckApp"><img src="images/FoodTruckApp.webp" alt="Food Truck Finder App Design"
-                            style="width:100%"></a>
+                    <a href="projects.html#FoodTruckApp"><img src="images/FoodTruckApp.webp"
+                            alt="Food Truck Finder App Design" style="width:100%"></a>
                     <div class="carousel-info">Food Truck Finder App Design</div>
                 </div>
 
                 <div class="carousel-container">
-                    <a href="projects.html#LandingPage"><img src="images/LandingPageImage.webp" alt="Food Truck Finder App Landing Page"
-                            style="width:100%"></a>
+                    <a href="projects.html#LandingPage"><img src="images/LandingPageImage.webp"
+                            alt="Food Truck Finder App Landing Page" style="width:100%"></a>
                     <div class="carousel-info">Food Truck App Landing Page</div>
                 </div>
 
                 <div class="carousel-container">
-                    <a href="projects.html#GameProject"><img src="images/GameProject.webp" alt="Javascript Space Shooter Game"
-                            style="width:100%"></a>
+                    <a href="projects.html#GameProject"><img src="images/GameProject.webp"
+                            alt="Javascript Space Shooter Game" style="width:100%"></a>
                     <div class="carousel-info">Space Shooter Game</div>
                 </div>
 
@@ -152,19 +152,21 @@
                 </div>
             </div>
         </section>
-        <form class="contact-form">
+        <ul id="contactForm-errors"></ul>
+        <form class="contact-form" name="contactForm" onsubmit="return validateForm()" novalidate>
             <h2 class="contact-header">Contact Me</h2>
             <div class="textInput">
                 <label for="email">Email: </label>
-                <input type="email" id="email" name="email" placeholder="email">
+                <input type="email" id="email" name="email" placeholder="email" required>
             </div>
             <div class="textInput">
                 <label for="subject">Subject: </label>
-                <input type="text" id="subject" name="subject" placeholder="subject">
+                <input type="text" id="subject" name="subject" placeholder="subject" required>
             </div>
             <div class="textInput">
                 <label for="message">Message: </label>
-                <textarea class="textInput" id="message" name="message" rows="4" cols="40" placeholder="message"></textarea>
+                <textarea class="textInput" id="message" name="message" rows="4" cols="40" placeholder="message"
+                    required></textarea>
             </div>
             <div>
                 <button class="submit" type="submit" value="Submit">Submit</button>
@@ -235,6 +237,50 @@
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 }
             });
+        }
+
+        function validateForm() {
+            let isValid = true;
+            let errors = document.getElementById("contactForm-errors");
+            errors.innerHTML = '';
+
+            let email = document.forms["contactForm"]["email"].value;
+            // Regex pattern from https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript
+            let emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            let emailField = document.getElementById("email");
+            if (!email.match(emailRegex)) {
+                emailField.style.border = "2px solid #f13535";
+                if (email == "") {
+                    errors.innerHTML += "<li>Email address is required</li>";
+                } else {
+                    errors.innerHTML += "<li>Email address is not valid</li>";
+                }
+                isValid = false;
+            } else {
+                emailField.style.border = "none";
+            }
+
+            let subject = document.forms["contactForm"]["subject"].value;
+            let subjectField = document.getElementById("subject");
+            if (subject == "") {
+                subjectField.style.border = "2px solid #f13535";
+                errors.innerHTML += "<li>Subject is required</li>";
+                isValid = false;
+            } else {
+                subjectField.style.border = "none";
+            }
+
+            let message = document.forms["contactForm"]["message"].value;
+            let messageField = document.getElementById("message");
+            if (message == "") {
+                messageField.style.border = "2px solid #f13535";
+                errors.innerHTML += "<li>Message is required</li>";
+                isValid = false;
+            } else {
+                subjectField.style.border = "none";
+            }
+
+            return isValid;
         }
     </script>
 </body>
