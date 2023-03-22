@@ -290,6 +290,12 @@ p {
   background-color: rgba(0, 174, 239, 1);
 }
 
+.accordion:hover,
+.accordion:focus-visible {
+  border: 1px solid rgba(25, 25, 25, 1);
+}
+
+
 .panel {
   padding: 0 16px;
   background-color: rgba(25, 25, 25, 0.2);
