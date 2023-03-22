@@ -20,7 +20,7 @@
         </div>
         <nav class="nav">
             <div class="logo-container">
-                <a class="logo" href="#"><img src="./images/Logo.png" alt="logo"></a>
+                <a class="logo" href="#"><img height="50px" width="50px" src="./images/Logo.png" alt="logo"></a>
                 <p>Foster Design System</p>
             </div>
             <ul class="menu-nav">
@@ -84,20 +84,20 @@
 
             <!-- Full images with numbers and message Info -->
             <div class="carousel-container">
-                <img src="./images/carousel-1.png"
-                    style="width:100%" alt="carousel example 1">
+                <img src="./images/carousel-1.png" width: 200px height: 200px style="width:100%; height: auto"
+                    alt="carousel example 1">
                 <div class="carousel-info">First caption</div>
             </div>
 
             <div class="carousel-container">
-                <img loading="lazy" src="./images/carousel-2.png"
-                    style="width:100%" alt="carousel example 2">
+                <img loading="lazy" src="./images/carousel-2.png" width: 200px height: 200px
+                    style="width:100%; height: auto;" alt="carousel example 2">
                 <div class="carousel-info">Second Caption</div>
             </div>
 
             <div class="carousel-container">
-                <img loading="lazy" src="./images/carousel-3.png"
-                    style="width:100%" alt="carousel example 3">
+                <img loading="lazy" src="./images/carousel-3.png" width: 200px height: 200px
+                    style="width:100%; height: auto;" alt="carousel example 3">
                 <div class="carousel-info">Third Caption</div>
             </div>
 
@@ -139,17 +139,17 @@
         */
         let slidePosition = 1;
         SlideShow(slidePosition);
-    
+
         // forward/Back controls
         function plusSlides(n) {
             SlideShow((slidePosition += n));
         }
-    
+
         //  images controls
         function currentSlide(n) {
             SlideShow((slidePosition = n));
         }
-    
+
         function SlideShow(n) {
             let slides = document.getElementsByClassName("carousel-container");
             let circles = document.getElementsByClassName("carousel-dot");
@@ -168,7 +168,7 @@
             slides[slidePosition - 1].style.display = "block";
             circles[slidePosition - 1].className += " enable";
         }
-    
+
         // Automatically scroll slides
         window.setInterval(function () {
             plusSlides(1);
