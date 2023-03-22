@@ -152,7 +152,7 @@
                 </div>
             </div>
         </section>
-        <ul id="contactForm-errors"></ul>
+        <ul id="contactForm-errors" class="form-errors"></ul>
         <form class="contact-form" name="contactForm" onsubmit="return validateForm()" novalidate>
             <h2 class="contact-header">Contact Me</h2>
             <div class="textInput">
@@ -251,9 +251,9 @@
             if (!email.match(emailRegex)) {
                 emailField.style.border = "2px solid #f13535";
                 if (email == "") {
-                    errors.innerHTML += "<li>Email address is required</li>";
+                    errors.innerHTML += "<li><a href='#email'>Email address</a> is required</li>";
                 } else {
-                    errors.innerHTML += "<li>Email address is not valid</li>";
+                    errors.innerHTML += "<li><a href='#email'>Email address</a> is not valid</li>";
                 }
                 isValid = false;
             } else {
@@ -264,7 +264,7 @@
             let subjectField = document.getElementById("subject");
             if (subject == "") {
                 subjectField.style.border = "2px solid #f13535";
-                errors.innerHTML += "<li>Subject is required</li>";
+                errors.innerHTML += "<li><a href='#subject'>Subject</a> is required</li>";
                 isValid = false;
             } else {
                 subjectField.style.border = "none";
@@ -274,10 +274,14 @@
             let messageField = document.getElementById("message");
             if (message == "") {
                 messageField.style.border = "2px solid #f13535";
-                errors.innerHTML += "<li>Message is required</li>";
+                errors.innerHTML += "<li><a href='#message'>Message</a> is required</li>";
                 isValid = false;
             } else {
                 subjectField.style.border = "none";
+            }
+
+            if (!isValid) {
+                errors.innerHTML = "<lh>Form Errors:</lh>" + errors.innerHTML;
             }
 
             return isValid;

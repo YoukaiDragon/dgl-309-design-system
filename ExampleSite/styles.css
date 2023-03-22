@@ -393,6 +393,14 @@ form {
   padding: 8px;
 }
 
+.form-errors {
+  font-size: 1.2em
+}
+
+.form-errors li {
+  margin-bottom: 8px;
+}
+
 label {
   margin: 4px 0;
 }
