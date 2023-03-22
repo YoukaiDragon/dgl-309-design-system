@@ -275,8 +275,7 @@ input {
 .card {
     width: auto;
     height: 100%;
-    /* Low opacity (0.4) against light main backgrounds, high opacity (0.8) against dark main backgrounds */
-    background: rgba(57, 181, 71, 0.4);
+    background: #6AD274;
     margin: 0 8px;
     position: relative;
 }
