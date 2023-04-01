@@ -558,7 +558,7 @@ input {
 
 .menu-nav__item {
     transition: all 0.5s ease-in-out;
-    width: 800%;
+    width: 100%;
 }
 
 .menu-nav__header {
@@ -575,12 +575,13 @@ input {
 
 .menu-nav__item a {
     text-decoration: none;
+    text-align: left;
     color: rgba(0, 174, 239, 1);
     display: inline-block;
-    padding: 0px 0 4px 8px;
-    text-align: center;
+    padding: 0 0 4px 8px;
     width: 100%;
     margin-bottom: 8px;
+    margin-left: 24px;
 }
 
 .menu-nav__item a:visited {
