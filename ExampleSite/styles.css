@@ -28,7 +28,7 @@ section {
 
 .about {
   padding: 16px;
-  background-color: #03964A;
+  background-color: #6AD274;
 }
 
 .education {
@@ -36,7 +36,7 @@ section {
 }
 
 .skills {
-  background-color: #03964A;
+  background-color: #6AD274;
   padding: 8px;
   margin-bottom: 48px;
 }
@@ -799,12 +799,13 @@ footer div {
 
 @media screen and (min-width: 998px) {
   main {
-    width: 70%;
+    width: 75%;
   }
 
   .profile-image {
     margin: 0;
     width: 400px;
+    margin: -16px 16px -16px -16px;
   }
 
   .about {
