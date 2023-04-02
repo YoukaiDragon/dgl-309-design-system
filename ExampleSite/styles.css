@@ -28,7 +28,7 @@ section {
 
 .about {
   padding: 16px;
-  background-color: #6AD274;
+  background-color: #53ca5f;
 }
 
 .education {
@@ -36,7 +36,7 @@ section {
 }
 
 .skills {
-  background-color: #6AD274;
+  background-color: #53ca5f;
   padding: 8px;
   margin-bottom: 48px;
 }
@@ -464,7 +464,7 @@ input {
 .card {
   width: auto;
   height: 100%;
-  background: #6AD274;
+  background: #53ca5f;
   margin: 0 8px;
   position: relative;
 }
