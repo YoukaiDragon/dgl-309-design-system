@@ -208,6 +208,7 @@ p {
 .logo-container {
   float: left;
   width: auto;
+  padding: 0 16px;
   height: 100vh;
   background: rgba(25, 25, 25, 1);
   transform: translateY(-100%);
